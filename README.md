@@ -8,7 +8,7 @@
 
 ### Usage:
 
-To generate a card for one of your repositories, use the following URL:
+To generate a GitHub Repo Card for one of your repositories, use the following URL:
 
 ```
 https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEME
