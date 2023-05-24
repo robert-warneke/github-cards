@@ -15,4 +15,3 @@ https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOS
 ```
 
 Replace USERNAME with your GitHub username, REPOSITORY with the name of your repository, and THEME with the name of the theme you want to use.
-
