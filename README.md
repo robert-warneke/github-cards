@@ -16,7 +16,7 @@ https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOS
 
 2. Replace USERNAME with your GitHub username, REPOSITORY with the name of your repository, and THEME with the name of the theme you want to use.
 
-For example, if your GitHub username is "robert-warneke", your repository name is "github-cards", and you want to use the "dark" theme, your URL would look like this:
+> For example, if your GitHub username is "robert-warneke", your repository name is "github-cards", and you want to use the "dark" theme, your URL would look like this:
 
 ```
 https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark
