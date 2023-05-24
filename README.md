@@ -21,3 +21,9 @@ For example, if your GitHub username is "robert-warneke", your repository name i
 ```
 https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark
 ```
+
+To use the generated card, you just need to embed the URL as an image in your README file or any other place:
+
+```
+![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+```
