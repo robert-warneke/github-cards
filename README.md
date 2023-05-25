@@ -1,5 +1,7 @@
 <h1 align="center">GitHub Cards</h1>
 
+- [GitHub Repo Cards](https://github.com/robert-warneke/github-cards#github-repo-cards)
+
 ---
 
 ## GitHub Repo Cards
