@@ -59,5 +59,7 @@
 - **`&showUsername=true`**: Displays the card title as `${username}/${repo}`.
 - **`&bgColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the background color.
     - Example: `&bgColor=6660e0`
+- **`&borderColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the border color.
+    - Example: `&borderColor=6660e0`
 
 ---

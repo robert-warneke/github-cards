@@ -6,6 +6,10 @@
 light
 ```
 
+```
+&theme=light
+```
+
 GitHub Repo Card:
 
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=light)
@@ -18,6 +22,10 @@ GitHub Repo Card:
 dark
 ```
 
+```
+&theme=dark
+```
+
 GitHub Repo Card:
 
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
@@ -27,23 +35,31 @@ GitHub Repo Card:
 ## `plainLight`
 
 ```
-plainLight
+straightWhite
+```
+
+```
+&theme=straightWhite
 ```
 
 GitHub Repo Card:
 
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=plainLight)
+![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightWhite)
 
 ---
 
 ## `plainDark`
 
 ```
-plainDark
+straightBlack
+```
+
+```
+&theme=straightBlack
 ```
 
 GitHub Repo Card:
 
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=plainDark)
+![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)
 
 ---

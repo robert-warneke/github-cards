@@ -9,6 +9,7 @@ module.exports = async (req, res) => {
     const theme = req.query.theme || 'light';
     const showUsername = req.query.showUsername === 'true' || false;
     let bgColorQuery = req.query.bgColor || null;
+    let borderColorQuery = req.query.borderColor || null;
 
     const themeColors = themes[theme];
     
@@ -17,6 +18,12 @@ module.exports = async (req, res) => {
     if (bgColorQuery) {
       bgColor = '#' + bgColorQuery;
     }
+
+    // Decide the border color
+    let borderColor = themeColors.border;
+    if (borderColorQuery) {
+      borderColor = '#' + borderColorQuery;
+    }    
 
     // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
     const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
@@ -48,7 +55,7 @@ module.exports = async (req, res) => {
       }
     </style>
   
-    <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="${themeColors.border}" width="399" fill="${bgColor}" stroke-opacity="1"/>
+    <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="${borderColor}" width="399" fill="${bgColor}" stroke-opacity="1"/>
   
     <g data-testid="card-title" transform="translate(25, 35)">
       <svg class="icon" x="0" y="-13" viewBox="0 0 16 16" version="1.1" width="16" height="16">
