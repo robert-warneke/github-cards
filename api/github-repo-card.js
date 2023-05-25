@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
   try {
     // Get the user and repo from the request query parameters.
     const user = req.query.user || 'robert-warneke';
-    const repo = req.query.repo || 'robert-warneke.github.io';
+    const repo = req.query.repo || 'github-cards';
     const theme = req.query.theme || 'light';
     const showUsername = req.query.showUsername === 'true' || false;
 
