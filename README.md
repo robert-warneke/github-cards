@@ -43,9 +43,9 @@ Default GitHub Repo Card:
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 ```
 
-GitHub Repo Card with `dark` theme applied:
-
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+> GitHub Repo Card with `dark` theme applied:
+> 
+> ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 
 #### Additional URL Parameters for GitHub Repo Cards:
 - **`&showUsername=true`**: displays the card title as `${username}/${repo}`.
