@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     let bgColorQuery = req.query.bgColor || null;
     let borderColorQuery = req.query.borderColor || null;
     let titleColorQuery = req.query.titleColor || null;
-    let textColorQuery = req.query.textColor || null;
+    let descriptionColorQuery = req.query.descriptionColor || null;
 
     const themeColors = themes[theme];
     
@@ -34,9 +34,9 @@ module.exports = async (req, res) => {
     }
 
     // Decide the text color
-    let textColor = themeColors.text;
-    if (textColorQuery) {
-      textColor = '#' + textColorQuery;
+    let descriptionColor = themeColors.description;
+    if (descriptionColorQuery) {
+      descriptionColor = '#' + descriptionColorQuery;
     }
 
     // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
@@ -65,7 +65,7 @@ module.exports = async (req, res) => {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: ${textColor};
+        color: ${descriptionColor};
       }
     </style>
   

@@ -57,11 +57,9 @@
 
 #### Additional URL Parameters for customizing GitHub Repo Cards:
 - **`&showUsername=true`**: Displays the card title as `${username}/${repo}`.
-- **`&bgColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the background color.
-    - Example: `&bgColor=6660e0`
-- **`&borderColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the border color.
-    - Example: `&borderColor=6660e0`
-- **`&titleColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the title color.
-    - Example: `&titleColor=6660e0`
+- **`&bgColor=COLOR`**: Change the background color.
+- **`&borderColor=COLOR`**: Change the border color.
+- **`&titleColor=COLOR`**: Change the title color.
+- **`&descriptionColor=COLOR`**: Change the description text color.
 
 ---
