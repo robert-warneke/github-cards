@@ -1,5 +1,7 @@
 # GitHub Cards
 
+---
+
 ## GitHub Repo Cards
 
 ### Demo:
@@ -55,3 +57,5 @@
 - **`&showUsername=true`**: displays the card title as `${username}/${repo}`.
 
 </details>
+
+---
