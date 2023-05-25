@@ -27,6 +27,10 @@
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
 
+> GitHub Repo Card:
+>
+> [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
+
 #### (Optional)
 
 3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMENAME`:
@@ -47,7 +51,7 @@
 
 > GitHub Repo Card with `dark` theme applied:
 > 
-> ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+> [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
 #### Additional URL Parameters for GitHub Repo Cards:
 - **`&showUsername=true`**: displays the card title as `${username}/${repo}`
