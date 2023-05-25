@@ -7,7 +7,7 @@ Default GitHub Repo Card:
 
 ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 
-### Usage:
+### How to Use:
 
 1. To use the 'GitHub Repo Card', you just need to embed the URL as an image in your README file or any other place:
 
