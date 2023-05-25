@@ -24,11 +24,11 @@ GitHub Repo Card with `dark` theme applied:
 
     > For example, if your GitHub username is `robert-warneke` and your repository name is `github-cards`, your URL would look like this:
 
-#### Optional:
-
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
+
+#### Optional:
 
 3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMESTYLE`.
 
