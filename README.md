@@ -15,6 +15,7 @@ GitHub Repo Card with `dark` theme applied:
 
 1. To use the 'GitHub Repo Card', you just need to embed the URL as an image in your README file or any other place:
 
+Markdown
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY)
 ```
@@ -23,6 +24,7 @@ GitHub Repo Card with `dark` theme applied:
 
     > For example, if *your GitHub username* is `robert-warneke` and *your repository name* is `github-cards`, your URL would look like this:
 
+Markdown
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
@@ -31,6 +33,7 @@ GitHub Repo Card with `dark` theme applied:
 
 3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMENAME`:
 
+Markdown
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEMENAME)
 ```
@@ -39,6 +42,7 @@ GitHub Repo Card with `dark` theme applied:
 
     > For example, if *your GitHub username* is `robert-warneke`, *your repository name* is `github-cards`, and *your selected theme* is `dark`, your URL would look like this:
 
+Markdown
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 ```
