@@ -1,4 +1,4 @@
-# GitHub Cards
+<h1 align="center">GitHub Cards</h1>
 
 ---
 
