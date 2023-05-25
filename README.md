@@ -1,7 +1,5 @@
 # GitHub Cards
 
----
-
 ## GitHub Repo Card
 
 ### Demo:
