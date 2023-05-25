@@ -28,12 +28,12 @@ GitHub Repo Card with `dark` theme applied:
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
 
-#### Optional:
+#### Optional Customization:
 
-3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMESTYLE`.
+3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMENAME`.
 
 ```md
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEMESTYLE)
+![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEMENAME)
 ```
 
-4. Replace `THEMESTYLE` with a theme of your choice.
+4. Replace `THEMENAME` with a theme of your choice.
