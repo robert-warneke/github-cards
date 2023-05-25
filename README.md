@@ -56,8 +56,8 @@
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
 #### Additional URL Parameters for GitHub Repo Cards:
-- **`&showUsername=true`**: Displays the card title as `${username}/${repo}`
-- **`&bgColor=COLOR`**: Replace `'COLOR'` with your selected hexadecimal color value to change the background color
+- **`&showUsername=true`**: Displays the card title as `${username}/${repo}`.
+- **`&bgColor=COLOR`**: Replace `'COLOR'` with *your selected hexadecimal color value* to change the background color.
     - Example: `&bgColor=6660e0`
 
 ---
