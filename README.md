@@ -1,7 +1,7 @@
 # GitHub Cards
 
 
-## GitHub Repo Cards
+## GitHub Repo Card
 
 ### Demo:
 GitHub Repo Card Default:
