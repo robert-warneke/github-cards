@@ -36,4 +36,4 @@ GitHub Repo Card with `dark` theme applied:
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEMENAME)
 ```
 
-4. Replace `THEMENAME` with the name of your selected theme. [Click here for a list of available themes!]()
+4. Replace `THEMENAME` with the name of your selected theme. [Click here for a list of available themes!](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md)
