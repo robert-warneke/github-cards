@@ -2,6 +2,10 @@
 
 ## `light`: Default
 
+```
+light
+```
+
 GitHub Repo Card:
 
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=light)
@@ -9,6 +13,10 @@ GitHub Repo Card:
 ---
 
 ## `dark`
+
+```
+dark
+```
 
 GitHub Repo Card:
 
