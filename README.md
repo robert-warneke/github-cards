@@ -10,7 +10,7 @@
 
 1. To use the GitHub Repo Card, you just need to embed the URL as an image in your README file or any other place:
 
-    ⓘ Replace `USERNAME` with ==your GitHub username== and `REPOSITORY` with the name of your repository.
+    ⓘ Replace `USERNAME` with *your GitHub username* and `REPOSITORY` with the *name of your repository*.
 
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY)
