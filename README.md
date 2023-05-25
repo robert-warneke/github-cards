@@ -29,7 +29,7 @@
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
 
-> GitHub Repo Card:
+> Example GitHub Repo Card:
 >
 > [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
 
@@ -51,7 +51,7 @@
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 ```
 
-> GitHub Repo Card with `dark` theme applied:
+> Example GitHub Repo Card with `dark` theme applied:
 > 
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
