@@ -48,6 +48,6 @@ GitHub Repo Card with `dark` theme applied:
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 
 #### Additional URL Parameters for GitHub Repo Cards:
-- `&showUsername=true`: By default, the username is not shown in the card title. This parameter will display the card title as 'username/repository'.
+- `&showUsername=true`: By default, the username is not shown in the card title. This parameter will display the card title as '${username}/${repo}'.
 
 ---
