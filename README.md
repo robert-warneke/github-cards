@@ -31,7 +31,7 @@ https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo
 ### Themes:
 
 To customize your GitHub Repo Card with a theme, append the URL with the following paramater:
-<p>https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY<span style="color: #6660e0;">&theme=THEME</span></p>
+<span>https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY<span style="color: #6660e0;">&theme=THEME</span></span>
 
 
 ```
