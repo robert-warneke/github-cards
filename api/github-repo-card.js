@@ -91,7 +91,7 @@ module.exports = async (req, res) => {
         <svg class="icon" x="90" y="3" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path d="M8.75.75a.75.75 0 00-1.5 0v3.5h-3.5a.75.75 0 000 1.5h3.5v3.5a.75.75 0 001.5 0v-3.5h3.5a.75.75 0 000-1.5h-3.5v-3.5z"></path>
         </svg>
-        <text data-testid="license" class="datatext" x="380" y="12">${repoData.license.spdx_id}</text>
+        <text data-testid="license" class="datatext" x="110" y="12">${repoData.license.spdx_id}</text>
       ` : `
         <svg class="icon" x="90" y="3" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path d="M8.75.75a.75.75 0 00-1.5 0v3.5h-3.5a.75.75 0 000 1.5h3.5v3.5a.75.75 0 001.5 0v-3.5h3.5a.75.75 0 000-1.5h-3.5v-3.5z"></path>
