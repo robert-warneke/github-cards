@@ -57,5 +57,6 @@
 
 #### Additional URL Parameters for GitHub Repo Cards:
 - **`&showUsername=true`**: displays the card title as `${username}/${repo}`
+- **`&bgColor=COLOR`**: change the card background color
 
 ---

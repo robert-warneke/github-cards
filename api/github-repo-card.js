@@ -4,14 +4,19 @@ const languages = require('./languages');
 
 module.exports = async (req, res) => {
   try {
-    // Get the user and repo from the request query parameters.
     const user = req.query.user || 'robert-warneke';
     const repo = req.query.repo || 'github-cards';
     const theme = req.query.theme || 'light';
     const showUsername = req.query.showUsername === 'true' || false;
+    let bgColorQuery = req.query.bgColor || null;
 
-    // Define theme colors based on the selected theme.
     const themeColors = themes[theme];
+    
+    // Decide the background color
+    let bgColor = themeColors.background;
+    if (bgColorQuery) {
+      bgColor = '#' + bgColorQuery;
+    }
 
     // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
     const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
@@ -43,7 +48,7 @@ module.exports = async (req, res) => {
       }
     </style>
   
-    <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="${themeColors.border}" width="399" fill="${themeColors.background}" stroke-opacity="1"/>
+    <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="${themeColors.border}" width="399" fill="${bgColor}" stroke-opacity="1"/>
   
     <g data-testid="card-title" transform="translate(25, 35)">
       <svg class="icon" x="0" y="-13" viewBox="0 0 16 16" version="1.1" width="16" height="16">
