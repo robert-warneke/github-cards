@@ -10,6 +10,7 @@ module.exports = async (req, res) => {
     const showUsername = req.query.showUsername === 'true' || false;
     let bgColorQuery = req.query.bgColor || null;
     let borderColorQuery = req.query.borderColor || null;
+    let titleColorQuery = req.query.titleColor || null;
 
     const themeColors = themes[theme];
     
@@ -23,7 +24,13 @@ module.exports = async (req, res) => {
     let borderColor = themeColors.border;
     if (borderColorQuery) {
       borderColor = '#' + borderColorQuery;
-    }    
+    }
+
+    // Decide the title color
+    let titleColor = themeColors.title;
+    if (titleColorQuery) {
+      titleColor = '#' + titleColorQuery;
+    }
 
     // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
     const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
@@ -40,7 +47,7 @@ module.exports = async (req, res) => {
     const svg = `
     <svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
-      .header { font: 600 14px 'Arial', Sans-Serif; fill: ${themeColors.title}; }
+      .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleColor}; }
       .description { font: 400 12px 'Arial', Sans-Serif; }
       .icon { fill: ${themeColors.icon}; }
       .datatext { font: 400 11px 'Arial', Sans-Serif; fill: ${themeColors.datatext}; }
