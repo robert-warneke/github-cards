@@ -12,7 +12,7 @@
 
 <details>
 <summary>
-<h3> 📋 How to Use...</h3>
+<h3> 📋 How to Use . . .</h3>
 </summary>
 
 1. To use the 'GitHub Repo Card', you just need to embed the URL as an image in your README file or any other place:
