@@ -9,6 +9,7 @@ Default GitHub Repo Card:
 ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 
 GitHub Repo Card with `dark` theme:
+
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 
 ### Usage:
