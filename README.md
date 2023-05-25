@@ -13,9 +13,10 @@
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY)
 ```
-> ⓘ Replace `USERNAME` with *your GitHub username* and `REPOSITORY` with the *name of your repository*.
->
-> For example, if your GitHub username is "robert-warneke" and your repository name is "github-cards", your URL would look like this:
+
+2. ⓘ Replace `USERNAME` with *your GitHub username* and `REPOSITORY` with the *name of your repository*.
+
+    For example, if your GitHub username is "robert-warneke" and your repository name is "github-cards", your URL would look like this:
 
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
