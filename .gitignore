@@ -20,3 +20,5 @@ yarn-error.log*
 
 # IDEs
 .vscode
+
+/examples
