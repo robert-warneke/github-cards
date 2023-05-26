@@ -32,7 +32,7 @@ GitHub Repo Card:
 
 ---
 
-## `plainLight`
+## `straightWhite`
 
 ```
 straightWhite
@@ -48,7 +48,7 @@ GitHub Repo Card:
 
 ---
 
-## `plainDark`
+## `straightBlack`
 
 ```
 straightBlack
