@@ -55,7 +55,7 @@
 > 
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
-| URL Parameter             | Description                                 |
+| GitHub Repo Card URL Parameters             | Description                                 |
 | ------------------------- | ------------------------------------------- |
 | `&showUsername=true`      | Displays the card title as 'username/repo'. | 
 | `&showLicense=false`      | Hides the license icon and text.            | 
