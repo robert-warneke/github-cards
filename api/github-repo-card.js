@@ -14,6 +14,7 @@ module.exports = async (req, res) => {
     let borderColorQuery = req.query.borderColor || null;
     let titleColorQuery = req.query.titleColor || null;
     let descriptionColorQuery = req.query.descriptionColor || null;
+    let langDotColorQuery = req.query.langDotColor || null;
 
     const themeColors = themes[theme];
     
@@ -47,7 +48,14 @@ module.exports = async (req, res) => {
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
       },
     });
+
     const repoData = response.data;
+
+        // Decide the language dot color
+        let langDotColor = repoData.language ? (languages[repoData.language]?.color || '#586069') : '#586069';
+        if (langDotColorQuery) {
+          langDotColor = '#' + langDotColorQuery;
+        }
 
     // Define the title. If showUsername is true, show the username/repo. Otherwise, just show the repo.
     const title = showUsername ? `${user}/${repo}` : repo;
@@ -94,7 +102,7 @@ module.exports = async (req, res) => {
       <g transform="translate(0, 30)">
       <!-- Language and License -->
       ${repoData.language ? `
-        <circle class="language-circle" cx="10" cy="8" r="6" fill="${languages[repoData.language]?.color || '#586069'}" />
+        <circle class="language-circle" cx="10" cy="8" r="6" fill="${langDotColor}" />
         <text data-testid="language" class="datatext" x="20" y="12">${repoData.language}</text>
       `: ''}
       
