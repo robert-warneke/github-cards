@@ -22,13 +22,12 @@ Follow these steps to use the 'GitHub Repo Card' in your README file or any othe
 
 2. Replace `'USERNAME'` with *your GitHub username* and `'REPOSITORY'` with the *name of your repository*.
 
-    > For example, if *your GitHub username* is `'robert-warneke'` and *your repository name* is `'github-cards'`, your URL would look like this:
-
+Example:
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
 
-### Customization:
+### ⚙️ Customization:
 You can customize the 'GitHub Repo Card' by providing query parameters in the URL:
 | URL Query Parameters            | Description                                             |
 | ------------------------- | -------------------------------------------                               |
