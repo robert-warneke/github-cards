@@ -54,5 +54,6 @@ You can customize the 'GitHub Repo Card' by providing query parameters in the UR
 | `descriptionColor`        | Color of the card description text.         | 
 | `dataTextColor`           | Color of the card data text.         | 
 | `langDotColor`            | Color of the language dot.       | 
+| `iconColor`               | Color of the icons.       | 
 
 ---

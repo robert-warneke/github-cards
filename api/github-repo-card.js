@@ -16,6 +16,7 @@ module.exports = async (req, res) => {
     let descriptionColorQuery = req.query.descriptionColor || null;
     let dataTextColorQuery = req.query.dataTextColor || null;
     let langDotColorQuery = req.query.langDotColor || null;
+    let iconColorQuery = req.query.iconColor || null;
 
     const themeColors = themes[theme];
     
@@ -49,6 +50,12 @@ module.exports = async (req, res) => {
       dataTextColor = '#' + dataTextColorQuery;
     }
 
+    // Decide the icon color
+    let iconColor = themeColors.icon;
+    if (iconColorQuery) {
+      iconColor = '#' + iconColorQuery;
+    }
+
     // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
     const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
       headers: {
@@ -73,7 +80,7 @@ module.exports = async (req, res) => {
     <style>
       .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleColor}; }
       .description { font: 400 12px 'Arial', Sans-Serif; }
-      .icon { fill: ${themeColors.icon}; }
+      .icon { fill: ${iconColor}; }
       .datatext { font: 400 11px 'Arial', Sans-Serif; fill: ${dataTextColor}; }
       .badge { font: 600 11px 'Arial', Sans-Serif; }
       .truncate {
