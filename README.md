@@ -43,19 +43,19 @@ Query parameters are added after the main URL using the '?' character, followed 
 > - `'repo'` is another parameter key and `'github-cards'` is its value.
 
 Available query parameters:
-| Query Parameters            | Description                                             |
+| Query Parameters            | Description                                                             |
 | ------------------------- | -------------------------------------------                               |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
 | `repo`                    | The repository name. Default is 'github-cards'.                           |
 | `showUsername`            | Display the username in the card title. Default is 'false'.               | 
 | `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
 | `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
-| `bgColor`                 | Background color of the card.                | 
-| `borderColor`             | Border color of the card.                    | 
-| `titleColor`              | Color of the card title text.                | 
-| `descriptionColor`        | Color of the card description text.         | 
-| `dataTextColor`           | Color of the card data text.         | 
-| `langDotColor`            | Color of the language dot.       | 
-| `iconColor`               | Color of the icons.       | 
+| `bgColor`                 | Background color of the card.                                             | 
+| `borderColor`             | Border color of the card.                                                 | 
+| `titleColor`              | Color of the card title text.                                             | 
+| `descriptionColor`        | Color of the card description text.                                       | 
+| `dataTextColor`           | Color of the card data text.                                              | 
+| `langDotColor`            | Color of the language dot.                                                | 
+| `iconColor`               | Color of the icons.                                                       | 
 
 ---
