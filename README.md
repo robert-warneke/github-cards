@@ -59,7 +59,7 @@
 | ------------------------- | ------------------------------------------- |
 | `&showUsername=true`      | Displays the card title as 'username/repo'. | 
 | `&showLicense=false`      | Hides the license icon and text.            | 
-| `&theme=THEMENAME`        | Defines a desired [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md). |
+| `&theme=THEMENAME`        | Style the card with a desired [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md). |
 | `&bgColor=COLOR`          | Change the background color.                | 
 | `&borderColor=COLOR`      | Change the border color.                    | 
 | `&titleColor=COLOR`       | Change the title color.                     | 
