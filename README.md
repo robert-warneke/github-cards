@@ -1,21 +1,21 @@
-<h1 align="center">GitHub Cards</h1>
-
-- [GitHub Repo Cards](https://github.com/robert-warneke/github-cards#github-repo-cards)
+# GitHub Cards
+Generate a variety of dynamic and aesthetically appealing GitHub stat cards, perfect for integrating into GitHub READMEs and beyond. 📊📈
 
 ---
 
 ## GitHub Repo Cards
+Enhance your GitHub profile and repositories with customizable GitHub Repo Cards. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
 
 ### 🖥️ Demo:
-> Default GitHub Repo Card:
+> Below is an example of the default GitHub Repo Card:
 >
 > [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
 
-### 📋 How to Use . . .
+### 📋 How to Use:
+Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
 
-1. To use the 'GitHub Repo Card', you just need to embed the URL as an image in your README file or any other place:
+1. Embed the URL as an image:
 
-###### `markdown`
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY)
 ```
@@ -24,11 +24,11 @@
 
     > For example, if *your GitHub username* is `'robert-warneke'` and *your repository name* is `'github-cards'`, your URL would look like this:
 
-###### `markdown`
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
 
+### Customization:
 You can customize the 'GitHub Repo Card' by providing query parameters in the URL:
 | URL Query Parameters            | Description                                             |
 | ------------------------- | -------------------------------------------                               |
