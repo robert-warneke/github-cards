@@ -4,7 +4,7 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
 ---
 
 ## GitHub Repo Cards
-Enhance your GitHub profile and repositories with customizable GitHub Repo Cards. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
+Enhance your GitHub profile and repositories with customizable 'GitHub Repo Cards'. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
 
 ### 🖥️ Demo:
 > 🔍 Example of the default 'GitHub Repo Card':
