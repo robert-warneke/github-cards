@@ -55,7 +55,8 @@
 > 
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
-| GitHub Repo Card URL Parameters             | Description                                             |
+
+| URL Query Parameters            | Description                                             |
 | ------------------------- | -------------------------------------------                               |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
 | `repo`                    | The repository name. Default is 'github-cards'.                           |
@@ -63,9 +64,9 @@
 | `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
 | `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
 | `bgColor`                 | Background color of the card.                | 
-| `&borderColor=COLOR`      | Border color of the card.                    | 
-| `&titleColor=COLOR`       | Color of the card title text.                | 
-| `&descriptionColor=COLOR` | Color of the card description text.         | 
-| `&langDotColor=COLOR`     | Color of the language dot.       | 
+| `borderColor`             | Border color of the card.                    | 
+| `titleColor`              | Color of the card title text.                | 
+| `descriptionColor`        | Color of the card description text.         | 
+| `langDotColor`            | Color of the language dot.       | 
 
 ---
