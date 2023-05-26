@@ -8,6 +8,8 @@ module.exports = async (req, res) => {
     const repo = req.query.repo || 'github-cards';
     const theme = req.query.theme || 'light';
     const showUsername = req.query.showUsername === 'true' || false;
+    const showLicense = req.query.showLicense !== 'false';
+
     let bgColorQuery = req.query.bgColor || null;
     let borderColorQuery = req.query.borderColor || null;
     let titleColorQuery = req.query.titleColor || null;
@@ -96,12 +98,13 @@ module.exports = async (req, res) => {
         <text data-testid="language" class="datatext" x="20" y="12">${repoData.language}</text>
       `: ''}
       
+      ${showLicense ? `
       <svg class="icon" x="${repoData.language ? '80' : '10'}" y="0" width="16" height="16" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/>
       </svg>
       <text data-testid="license" class="datatext" x="${repoData.language ? '100' : '30'}" y="12">${repoData.license ? repoData.license.name : 'No License'}</text>
+    ` : ''}
       
-
         <!-- Stars icon -->
         <svg class="icon" x="180" y="0" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
