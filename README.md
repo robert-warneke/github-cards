@@ -28,6 +28,8 @@ Follow these steps to use the 'GitHub Repo Card' in your README file or any othe
 > ```
 
 ### ⚙️ Customization:
+You can customize the 'GitHub Repo Card' by providing query parameters in the URL.
+
 Query parameters are added after the main URL using the '?' character, followed by a series of key=value pairs, separated by '&'.
 
 > 🔍 Example:
@@ -40,7 +42,6 @@ Query parameters are added after the main URL using the '?' character, followed 
 > - `'user'` is a parameter key and `'robert-warneke'` is its value.
 > - `'repo'` is another parameter key and `'github-cards'` is its value.
 
-You can customize the 'GitHub Repo Card' by providing query parameters in the URL:
 | Query Parameters            | Description                                             |
 | ------------------------- | -------------------------------------------                               |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
