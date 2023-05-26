@@ -20,7 +20,7 @@ Follow these steps to use the 'GitHub Repo Card' in your README file or any othe
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY)
 ```
 
-2. Replace `'USERNAME'` with *your GitHub username* and `'REPOSITORY'` with the *name of your repository*.
+2. Replace `'USERNAME'` with **your GitHub username** and `'REPOSITORY'` with the **name of your repository**.
 
 > Example:
 > ```md
