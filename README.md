@@ -55,7 +55,8 @@
 > 
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
-#### All available 'GitHub Repo Card' URL Query Parameters:
+You can customize the 'GitHub Repo Card' by providing query parameters in the URL.
+Available options:
 | URL Query Parameters            | Description                                             |
 | ------------------------- | -------------------------------------------                               |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
