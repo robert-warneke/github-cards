@@ -9,9 +9,23 @@
 ### 🖥️ Demo:
 > Default GitHub Repo Card:
 >
-> [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
+> [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card)](https://github.com/robert-warneke/github-cards)
 
 ### 📋 How to Use . . .
+
+You can customize the 'GitHub Repo Card' by providing query parameters in the URL:
+| URL Query Parameters            | Description                                             |
+| ------------------------- | -------------------------------------------                               |
+| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
+| `repo`                    | The repository name. Default is 'github-cards'.                           |
+| `showUsername`            | Display the username in the card title. Default is 'false'.               | 
+| `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
+| `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
+| `bgColor`                 | Background color of the card.                | 
+| `borderColor`             | Border color of the card.                    | 
+| `titleColor`              | Color of the card title text.                | 
+| `descriptionColor`        | Color of the card description text.         | 
+| `langDotColor`            | Color of the language dot.       | 
 
 1. To use the 'GitHub Repo Card', you just need to embed the URL as an image in your README file or any other place:
 
@@ -28,46 +42,5 @@
 ```md
 ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 ```
-
-> Example GitHub Repo Card:
->
-> [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
-
-#### (Optional)
-
-3. Further customize the 'GitHub Repo Card' by defining a theme with the URL parameter `&theme=THEMENAME`:
-
-###### `markdown`
-```md
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=USERNAME&repo=REPOSITORY&theme=THEMENAME)
-```
-
-4. Replace `THEMENAME` with the *name of your selected theme*. [Click here for an overview of available themes!](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md)
-
-    > For example, if *your GitHub username* is `robert-warneke`, *your repository name* is `github-cards`, and *your selected theme* is `dark`, your URL would look like this:
-
-###### `markdown`
-```md
-![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
-```
-
-> Example GitHub Repo Card with `dark` theme applied:
-> 
-> [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
-
-You can customize the 'GitHub Repo Card' by providing query parameters in the URL.
-Available options:
-| URL Query Parameters            | Description                                             |
-| ------------------------- | -------------------------------------------                               |
-| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
-| `repo`                    | The repository name. Default is 'github-cards'.                           |
-| `showUsername`            | Display the username in the card title. Default is 'false'.               | 
-| `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
-| `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
-| `bgColor`                 | Background color of the card.                | 
-| `borderColor`             | Border color of the card.                    | 
-| `titleColor`              | Color of the card title text.                | 
-| `descriptionColor`        | Color of the card description text.         | 
-| `langDotColor`            | Color of the language dot.       | 
 
 ---
