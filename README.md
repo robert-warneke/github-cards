@@ -58,6 +58,7 @@
 #### Additional URL Parameters for customizing GitHub Repo Cards:
 - **`&showUsername=true`**: Displays the card title as `${username}/${repo}`.
 - **`&showLicense=false`**: Hides the license icon and text.
+
 - **`&bgColor=COLOR`**: Change the background color.
 - **`&borderColor=COLOR`**: Change the border color.
 - **`&titleColor=COLOR`**: Change the title color.
