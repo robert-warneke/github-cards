@@ -55,10 +55,6 @@
 > 
 > [![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
-#### Additional URL Parameters for customizing GitHub Repo Cards:
-- **`&showUsername=true`**: Displays the card title as `${username}/${repo}`.
-- **`&showLicense=false`**: Hides the license icon and text.
-
 | Url Parameter             | Description |
 | ------------------------- | ----------- |
 | `&showUsername=true`      | Displays the card title as '${username}/${repo}'. | 
@@ -68,12 +64,5 @@
 | `&titleColor=COLOR`       | Change the title color. | 
 | `&descriptionColor=COLOR` | Change the description text color. | 
 | `&langDotColor=COLOR`     | Change the color of the language dot. | 
-
-
-- **`&bgColor=COLOR`**: Change the background color.
-- **`&borderColor=COLOR`**: Change the border color.
-- **`&titleColor=COLOR`**: Change the title color.
-- **`&descriptionColor=COLOR`**: Change the description text color.
-- **`&langDotColor=COLOR`**: Change the color of the language dot.
 
 ---
