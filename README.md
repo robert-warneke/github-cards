@@ -37,8 +37,8 @@ Query parameters are added after the main URL using the '?' character, followed 
 >
 > In this example:
 > - `https://my-github-cards.vercel.app/api/github-repo-card` is the main URL.
-> - `user` is a parameter key and `robert-warneke` is its value.
-> - `repo` is another parameter key and `github-cards` is its value.
+> - `'user'` is a parameter key and `'robert-warneke'` is its value.
+> - `'repo'` is another parameter key and `'github-cards'` is its value.
 
 You can customize the 'GitHub Repo Card' by providing query parameters in the URL:
 | Query Parameters            | Description                                             |
