@@ -76,10 +76,19 @@ module.exports = async (req, res) => {
       iconColor = '#' + iconColorQuery;
     }
 
+    // Decide the repo icon color
     let repoIconColor = repoIconColorQuery ? '#' + repoIconColorQuery : iconColor;
+
+    // Decide the license icon color
     let licenseIconColor = licenseIconColorQuery ? '#' + licenseIconColorQuery : iconColor;
+
+    // Decide the star icon color
     let starIconColor = starIconColorQuery ? '#' + starIconColorQuery : iconColor;
+
+    // Decide the watch icon color
     let watchIconColor = watchIconColorQuery ? '#' + watchIconColorQuery : iconColor;
+
+    // Decide the fork icon color
     let forkIconColor = forkIconColorQuery ? '#' + forkIconColorQuery : iconColor;
 
     // Decide the language dot color
@@ -100,7 +109,6 @@ module.exports = async (req, res) => {
     <style>
       .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleColor}; }
       .description { font: 400 12px 'Arial', Sans-Serif; }
-      .icon { fill: ${iconColor}; }
       .datatext { font: 400 11px 'Arial', Sans-Serif; fill: ${dataTextColor}; }
       .badge { font: 600 11px 'Arial', Sans-Serif; }
       .truncate {
