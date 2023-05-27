@@ -11,7 +11,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 >
 > [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
 
-> 🔍 Example of the 'GitHub Repo Card' with 'showUsername' value as 'true':
+> 🔍 Example of the 'GitHub Repo Card' with 'showUsername' query parameter:
 >
 > [![GitHub Repo Card with Username](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 
