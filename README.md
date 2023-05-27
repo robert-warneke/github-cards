@@ -25,10 +25,18 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 
 > 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'dark'`:
 >
-> [![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
+> [![GitHub Repo Card with dark theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 >
 > ```md
-> ![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+> ![GitHub Repo Card with dark theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+> ```
+
+> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'straightBlack'`:
+>
+> [![GitHub Repo Card with straightBlack theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)](https://github.com/robert-warneke/github-cards)
+>
+> ```md
+> ![GitHub Repo Card with straightBlack theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)
 > ```
 
 > 🔍 Example of the 'GitHub Repo Card' `'showLicense'` parameter key with the value `'false'`:
