@@ -30,7 +30,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > ```md
 > ![GitHub Repo Card with dark theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 > ```
-> Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
+> &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
 > 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'straightBlack'`:
 >
@@ -39,7 +39,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > ```md
 > ![GitHub Repo Card with straightBlack theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)
 > ```
-> Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
+> &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
 
 > 🔍 Example of the 'GitHub Repo Card' `'showLicense'` parameter key with the value `'false'`:
