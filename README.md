@@ -11,13 +11,17 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 >
 > [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
 
-> 🔍 Example of the 'GitHub Repo Card' with `showUsername` query parameter:
+> 🔍 Example of the 'GitHub Repo Card' with `showUsername=true` query parameter:
 >
-> [![GitHub Repo Card with Username](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
+> [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 
-> 🔍 Example of the 'GitHub Repo Card' with `theme` query parameter:
+> 🔍 Example of the 'GitHub Repo Card' with `theme=light` query parameter:
 >
-> [![GitHub Repo Card with Theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
+> [![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
+
+> 🔍 Example of the 'GitHub Repo Card' with `showLicense=false` query parameter:
+>
+> [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
 
 ### 📋 How to Use:
 Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
