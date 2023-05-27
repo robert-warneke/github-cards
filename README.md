@@ -15,7 +15,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `showUsername` parameter key with the value `true`:
+> 🔍 Example of the 'GitHub Repo Card' `'showUsername'` parameter key with the value `'true'`:
 >
 > [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 >
@@ -23,7 +23,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > ![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `theme` parameter key with the value `dark`:
+> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'dark'`:
 >
 > [![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 >
