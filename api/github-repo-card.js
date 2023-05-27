@@ -18,7 +18,19 @@ module.exports = async (req, res) => {
     let langDotColorQuery = req.query.langDotColor || null;
     let iconColorQuery = req.query.iconColor || null;
 
-    const themeColors = themes[theme];
+    // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
+    const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
+      headers: {
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      },
+    });
+
+    const repoData = response.data;
+
+    const lang = repoData.language;
+    const langData = languages[lang];
+
+    const themeColors = themes[theme](lang);
     
     // Decide the background color
     let bgColor = themeColors.background;
@@ -56,20 +68,14 @@ module.exports = async (req, res) => {
       iconColor = '#' + iconColorQuery;
     }
 
-    // Fetch the repo data from the GitHub API using the GITHUB_TOKEN environment variable.
-    const response = await axios.get(`https://api.github.com/repos/${user}/${repo}`, {
-      headers: {
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      },
-    });
-
-    const repoData = response.data;
-
-        // Decide the language dot color
-        let langDotColor = repoData.language ? (languages[repoData.language]?.color || '#586069') : '#586069';
-        if (langDotColorQuery) {
-          langDotColor = '#' + langDotColorQuery;
-        }
+    // Decide the language dot color
+    let langDotColor = themeColors.langDot;
+    if (!langDotColor) {
+      langDotColor = langData ? langData.color : '#000000';
+    }
+    if (langDotColorQuery) {
+      langDotColor = '#' + langDotColorQuery;
+    }
 
     // Define the title. If showUsername is true, show the username/repo. Otherwise, just show the repo.
     const title = showUsername ? `${user}/${repo}` : repo;
