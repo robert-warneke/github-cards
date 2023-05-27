@@ -123,7 +123,7 @@ module.exports = async (req, res) => {
       <!-- Language and License -->
       ${repoData.language ? `
         <circle class="language-circle" cx="10" cy="8" r="6" fill="${langDotColor}" />
-        <text data-testid="language" class="datatext" x="20" y="12">${repoData.language}</text>
+        <text data-testid="language" class="datatext" x="20" y="12">${lang}</text>
       `: ''}
       
       ${showLicense ? `
