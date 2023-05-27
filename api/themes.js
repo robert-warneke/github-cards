@@ -46,7 +46,7 @@ const themes = {
     border: '#f5f5f5',
     title: '#ffffcc',
     description: '#f5f5f5',
-    datatext: '#ffffcc',
+    dataText: '#ffffcc',
     icon: '#b4e8e6',
     langDot: '#e0cc66',
   }),
