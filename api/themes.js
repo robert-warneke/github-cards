@@ -41,6 +41,15 @@ const themes = {
     icon: '#000000',
     langDot: '#000000'
   }),
+  warneke: (lang) => ({
+    background: '#554dc7',
+    border: '#f5f5f5',
+    title: '#f5f5f5',
+    description: '#f5f5f5',
+    datatext: '#f5f5f5',
+    icon: '#b4e8e6',
+    langDot: '#e0cc66',
+  }),
   // ...any other themes you want to define
 };
 

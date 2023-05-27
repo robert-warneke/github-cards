@@ -57,7 +57,7 @@ module.exports = async (req, res) => {
     }
 
     // Decide the data text color
-    let dataTextColor = themeColors.dataText;
+    let dataTextColor = themeColors.datatext;
     if (dataTextColorQuery) {
       dataTextColor = '#' + dataTextColorQuery;
     }
