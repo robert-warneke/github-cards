@@ -18,14 +18,26 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > 🔍 Example of the 'GitHub Repo Card' `showUsername` parameter key with the value `true`:
 >
 > [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
+>
+> ```md
+> ![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)
+> ```
 
 > 🔍 Example of the 'GitHub Repo Card' `theme` parameter key with the value `dark`:
 >
 > [![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
+>
+> ```md
+> ![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
+> ```
 
 > 🔍 Example of the 'GitHub Repo Card' `showLicense` parameter key with the value `false`:
 >
 > [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
+>
+> ```md
+> ![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)
+> ```
 
 ### 📋 How to Use:
 Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
