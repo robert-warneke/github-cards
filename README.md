@@ -10,16 +10,20 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > 🔍 Example of the default 'GitHub Repo Card':
 >
 > [![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)](https://github.com/robert-warneke/github-cards)
+>
+> ```md
+> ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
+> ```
 
-> 🔍 Example of the 'GitHub Repo Card' with `showUsername=true` query parameter:
+> 🔍 Example of the 'GitHub Repo Card' `showUsername` parameter key with the value `true`:
 >
 > [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 
-> 🔍 Example of the 'GitHub Repo Card' with `theme=dark` query parameter:
+> 🔍 Example of the 'GitHub Repo Card' `theme` parameter key with the value `dark`:
 >
 > [![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
-> 🔍 Example of the 'GitHub Repo Card' with `showLicense=false` query parameter:
+> 🔍 Example of the 'GitHub Repo Card' `showLicense` parameter key with the value `false`:
 >
 > [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
 
