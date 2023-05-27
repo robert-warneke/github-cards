@@ -17,7 +17,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 
 > 🔍 Example of the 'GitHub Repo Card' with 'theme' query parameter:
 >
-> [![GitHub Repo Card with Username](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
+> [![GitHub Repo Card with Theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 
 ### 📋 How to Use:
 Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
