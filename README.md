@@ -92,6 +92,11 @@ Available query parameters:
 | `descriptionColor`        | Color of the card description text.                                       | 
 | `dataTextColor`           | Color of the card data text.                                              | 
 | `langDotColor`            | Color of the language dot.                                                | 
-| `iconColor`               | Color of the icons.                                                       | 
+| `iconColor`               | Color of all the icons.                                                   |
+| `repoIconColor`           | Color of the repo icon. Overrides 'iconColor'.                            |
+| `licenseIconColor`        | Color of the license icon. Overrides 'iconColor'.                         |
+| `starIconColor`           | Color of the star icon. Overrides 'iconColor'.                            |
+| `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                        |
+| `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                           |
 
 ---
