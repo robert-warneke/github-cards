@@ -43,7 +43,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 > - `'repo'` is another parameter key and `'github-cards'` is its value.
 
 Available query parameters:
-| Query Parameters            | Description                                                             |
+| Query Parameters          | Description                                                               |
 | ------------------------- | -------------------------------------------                               |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
 | `repo`                    | The repository name. Default is 'github-cards'.                           |
