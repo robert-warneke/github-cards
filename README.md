@@ -31,7 +31,7 @@ Enhance your GitHub profile and repositories with customizable 'GitHub Repo Card
 > ![GitHub Repo Card with theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `showLicense` parameter key with the value `false`:
+> 🔍 Example of the 'GitHub Repo Card' `'showLicense'` parameter key with the value `'false'`:
 >
 > [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
 >
