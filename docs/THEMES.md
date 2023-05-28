@@ -4,7 +4,7 @@
  <table>
   <tr>
     <td><code>'light'</code></td>
-    <td><img src="https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=light"></td>
+    <td><img align="center" src="https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=light"></td>
   </tr>
 </table> 
 
