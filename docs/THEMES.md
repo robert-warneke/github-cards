@@ -19,6 +19,10 @@
     <td><img align="center" src="https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack"></td>
   </tr>
   <tr>
+    <td><code>'terminal'</code></td>
+    <td><img align="center" src="https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=terminal"></td>
+  </tr>
+  <tr>
     <td><code>'warneke'</code></td>
     <td><img align="center" src="https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=warneke"></td>
   </tr>
