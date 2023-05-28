@@ -39,7 +39,7 @@ module.exports = async (req, res) => {
     const langData = languages[lang];
 
     const themeColors = themes[theme](lang);
-    
+
     // Decide the background color
     let bgColor = themeColors.background;
     if (bgColorQuery) {
@@ -72,24 +72,44 @@ module.exports = async (req, res) => {
 
     // Decide the icon color
     let iconColor = themeColors.icon;
+    let repoIconColor = themeColors.repoIcon || iconColor;
+    let licenseIconColor = themeColors.licenseIcon || iconColor;
+    let starIconColor = themeColors.starIcon || iconColor;
+    let watchIconColor = themeColors.watchIcon || iconColor;
+    let forkIconColor = themeColors.forkIcon || iconColor;
     if (iconColorQuery) {
       iconColor = '#' + iconColorQuery;
+      repoIconColor = iconColor;
+      licenseIconColor = iconColor;
+      starIconColor = iconColor;
+      watchIconColor = iconColor;
+      forkIconColor = iconColor;
+    }
+    
+    // Decide the repo icon color
+    if (repoIconColorQuery) {
+      repoIconColor = '#' + repoIconColorQuery;
     }
 
-    // Decide the repo icon color
-    let repoIconColor = repoIconColorQuery ? '#' + repoIconColorQuery : iconColor;
-
     // Decide the license icon color
-    let licenseIconColor = licenseIconColorQuery ? '#' + licenseIconColorQuery : iconColor;
+    if (licenseIconColorQuery) {
+      licenseIconColor = '#' + licenseIconColorQuery;
+    }
 
     // Decide the star icon color
-    let starIconColor = starIconColorQuery ? '#' + starIconColorQuery : iconColor;
+    if (starIconColorQuery) {
+      starIconColor = '#' + starIconColorQuery;
+    }
 
     // Decide the watch icon color
-    let watchIconColor = watchIconColorQuery ? '#' + watchIconColorQuery : iconColor;
+    if (watchIconColorQuery) {
+      watchIconColor = '#' + watchIconColorQuery;
+    }
 
     // Decide the fork icon color
-    let forkIconColor = forkIconColorQuery ? '#' + forkIconColorQuery : iconColor;
+    if (forkIconColorQuery) {
+      forkIconColor = '#' + forkIconColorQuery;
+    }
 
     // Decide the language dot color
     let langDotColor = themeColors.langDot;

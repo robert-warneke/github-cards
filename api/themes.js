@@ -10,7 +10,7 @@ const themes = {
     border: '#8ab4f8', 
     title: '#8ab4f8', 
     description: '#f5f5f5', 
-    dataText:"#8ab4f8", 
+    dataText: '#8ab4f8', 
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang)
   }),
@@ -19,7 +19,7 @@ const themes = {
     border: '#8ab4f8', 
     title: '#1a0dab', 
     description: '#333333', 
-    dataText:"#1a0dab", 
+    dataText: '#1a0dab', 
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang)
   }),
@@ -28,7 +28,7 @@ const themes = {
     border: '#ffffff', 
     title: '#ffffff', 
     description: '#ffffff', 
-    dataText:"#ffffff", 
+    dataText: '#ffffff', 
     icon: '#ffffff',
     langDot: '#ffffff'
   }),
@@ -37,17 +37,21 @@ const themes = {
     border: '#000000', 
     title: '#000000', 
     description: '#000000', 
-    dataText:"#000000", 
+    dataText: '#000000', 
     icon: '#000000',
     langDot: '#000000'
   }),
   warneke: (lang) => ({
     background: '#554dc7',
-    border: '#f5f5f5',
+    border: '#b4e8e6',
     title: '#ffffcc',
     description: '#f5f5f5',
     dataText: '#ffffcc',
-    icon: '#b4e8e6',
+    repoIcon: '#ffd6e0',
+    licenseIcon: '#b4e8e6',
+    starIcon: '#ffffcc',
+    watchIcon: '#ffffcc',
+    forkIcon: '#ffffcc',
     langDot: '#e0cc66',
   }),
   // ...any other themes you want to define
