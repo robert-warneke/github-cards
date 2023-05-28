@@ -12,8 +12,9 @@ module.exports = async (req, res) => {
 
     let bgColorQuery = req.query.bgColor || null;
     let borderColorQuery = req.query.borderColor || null;
-    let titleColorQuery = req.query.titleColor || null;
-    let descriptionColorQuery = req.query.descriptionColor || null;
+    let textColorQuery = req.query.textColor || null;
+    let titleTextColorQuery = req.query.titleTextColor || null;
+    let descriptionTextColorQuery = req.query.descriptionTextColor || null;
     let dataTextColorQuery = req.query.dataTextColor || null;
     let langDotColorQuery = req.query.langDotColor || null;
     let iconColorQuery = req.query.iconColor || null;
@@ -52,20 +53,29 @@ module.exports = async (req, res) => {
       borderColor = '#' + borderColorQuery;
     }
 
-    // Decide the title color
-    let titleColor = themeColors.title;
-    if (titleColorQuery) {
-      titleColor = '#' + titleColorQuery;
+    // Decide the text color
+    let textColor = themeColors.text;
+    let titleTextColor = themeColors.titleText || textColor;
+    let dataTextColor = themeColors.dataText || textColor;
+    let descriptionTextColor = themeColors.descriptionText || textColor;
+    if (textColorQuery) {
+      textColor = '#' + textColorQuery;
+      titleTextColor = textColor;
+      descriptionTextColor = textColor;
+      dataTextColor = textColor;
+    }
+
+    // Decide the title text color
+    if (titleTextColorQuery) {
+      titleTextColor = '#' + titleTextColorQuery;
     }
 
     // Decide the description text color
-    let descriptionColor = themeColors.description;
-    if (descriptionColorQuery) {
-      descriptionColor = '#' + descriptionColorQuery;
+    if (descriptionTextColorQuery) {
+      descriptionTextColor = '#' + descriptionTextColorQuery;
     }
 
     // Decide the data text color
-    let dataTextColor = themeColors.dataText;
     if (dataTextColorQuery) {
       dataTextColor = '#' + dataTextColorQuery;
     }
@@ -127,7 +137,7 @@ module.exports = async (req, res) => {
     const svg = `
     <svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
-      .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleColor}; }
+      .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleTextColor}; }
       .description { font: 400 12px 'Arial', Sans-Serif; }
       .datatext { font: 400 11px 'Arial', Sans-Serif; fill: ${dataTextColor}; }
       .badge { font: 600 11px 'Arial', Sans-Serif; }
@@ -137,7 +147,7 @@ module.exports = async (req, res) => {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: ${descriptionColor};
+        color: ${descriptionTextColor};
       }
     </style>
   

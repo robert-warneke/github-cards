@@ -90,9 +90,10 @@ Available query parameters:
 | `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
 | `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
 | `bgColor`                 | Background color of the card.                                             | 
-| `borderColor`             | Border color of the card.                                                 | 
-| `titleColor`              | Color of the card title text.                                             | 
-| `descriptionColor`        | Color of the card description text.                                       | 
+| `borderColor`             | Border color of the card.                                                 |
+| `textColor`               | Color of all the card text.                                               | 
+| `titleTextColor`          | Color of the card title text. Overrides 'textColor'.                      | 
+| `descriptionTextColor`    | Color of the card description text. Overrides 'textColor'.                | 
 | `dataTextColor`           | Color of the card data text.                                              | 
 | `langDotColor`            | Color of the language dot.                                                | 
 | `iconColor`               | Color of all the icons.                                                   |
