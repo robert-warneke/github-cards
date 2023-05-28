@@ -119,3 +119,12 @@ Query parameters are added after the main URL using the '?' character, followed 
 Thank you for your interest in supporting the GitHub Cards project! Your support plays a vital role in maintaining and improving the project. There are various ways you can contribute:
 1. ⭐ Star the Repository: By starring the GitHub Cards repository on GitHub, you can show your appreciation and help the project reach a wider audience.
 2. 🗨️ Spread the Word: Help spread the word about GitHub Cards. Whether it's through social media, developer communities, or sharing with your peers, your advocacy can make a significant impact.
+
+---
+
+# 📬 Get in Touch
+
+If you have questions or ideas concerning GitHub Cards, you're welcome to reach out. Here are a few ways you can connect:
+
+1. GitHub Issues: If you encounter a problem with the GitHub Cards, have a look at existing [issues](https://github.com/robert-warneke/github-cards/issues) or open a new one. This is the best place to discuss technical issues or suggest new features.
+2. Email: If you'd prefer to discuss something in private, you can send me an email. Please use this sparingly, as it's more efficient for us to have most discussions in the open on GitHub issues. hello@robertwarneke.com
