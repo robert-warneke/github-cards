@@ -41,6 +41,15 @@ const themes = {
     icon: '#000000',
     langDot: '#000000'
   }),
+  terminal: (lang) => ({ 
+    background: '#000000', 
+    border: '#39ff14', 
+    title: '#39ff14', 
+    description: '#39ff14', 
+    dataText: '#39ff14', 
+    icon: '#39ff14',
+    langDot: '#39ff14'
+  }),
   warneke: (lang) => ({
     background: '#554dc7',
     border: '#b4e8e6',
