@@ -47,15 +47,15 @@ const themes = {
   warneke: (lang) => ({
     background: '#554dc7',
     border: '#b4e8e6',
-    titleText: '#ffffcc',
+    titleText: '#fffbb3',
     descriptionText: '#f5f5f5',
     dataText: '#ffffcc',
-    repoIcon: '#ffd6e0',
-    licenseIcon: '#b4e8e6',
-    starIcon: '#ffffcc',
-    watchIcon: '#ffffcc',
-    forkIcon: '#ffffcc',
-    langDot: '#e0cc66',
+    repoIcon: '#a1ffc6',
+    licenseIcon: '#a1ffc6',
+    starIcon: '#fffbb3',
+    watchIcon: '#fffbb3',
+    forkIcon: '#fffbb3',
+    langDot: '#ff69b4',
   }),
   // ...any other themes you want to define
 };
