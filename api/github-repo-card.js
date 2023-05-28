@@ -16,6 +16,11 @@ module.exports = async (req, res) => {
     let titleTextColorQuery = req.query.titleTextColor || null;
     let descriptionTextColorQuery = req.query.descriptionTextColor || null;
     let dataTextColorQuery = req.query.dataTextColor || null;
+    let langTextColorQuery = req.query.langTextColor || null;
+    let licenseTextColorQuery = req.query.licenseTextColor || null;
+    let starTextColorQuery = req.query.starTextColor || null;
+    let watchTextColorQuery = req.query.watchTextColor || null;
+    let forkTextColorQuery = req.query.forkTextColor || null;
     let langDotColorQuery = req.query.langDotColor || null;
     let iconColorQuery = req.query.iconColor || null;
     let repoIconColorQuery = req.query.repoIconColor || null;
@@ -76,8 +81,43 @@ module.exports = async (req, res) => {
     }
 
     // Decide the data text color
+    let langTextColor = themeColors.langText || dataTextColor;
+    let licenseTextColor = themeColors.licenseText || dataTextColor;
+    let starTextColor = themeColors.starText  || dataTextColor;
+    let watchTextColor = themeColors.watchText || dataTextColor;
+    let forkTextColor = themeColors.forkText || dataTextColor;
     if (dataTextColorQuery) {
       dataTextColor = '#' + dataTextColorQuery;
+      langTextColor = dataTextColor;
+      licenseTextColor = dataTextColor;
+      starTextColor = dataTextColor;
+      watchTextColor = dataTextColor;
+      forkTextColor = dataTextColor;
+    }
+
+    // Decide the language text color
+    if (langTextColorQuery) {
+      langTextColor = '#' + langTextColorQuery;
+    }
+
+    // Decide the license text color
+    if (licenseTextColorQuery) {
+      licenseTextColor = '#' + licenseTextColorQuery;
+    }
+
+    // Decide the star text color
+    if (starTextColorQuery) {
+      starTextColor = '#' + starTextColorQuery;
+    }
+
+    // Decide the watching text color
+    if (watchTextColorQuery) {
+      watchTextColor = '#' + watchTextColorQuery;
+    }
+
+    // Decide the fork text color
+    if (forkTextColorQuery) {
+      forkTextColor = '#' + forkTextColorQuery;
     }
 
     // Decide the icon color
@@ -139,7 +179,11 @@ module.exports = async (req, res) => {
     <style>
       .header { font: 600 14px 'Arial', Sans-Serif; fill: ${titleTextColor}; }
       .description { font: 400 12px 'Arial', Sans-Serif; }
-      .datatext { font: 400 11px 'Arial', Sans-Serif; fill: ${dataTextColor}; }
+      .langText { font: 400 11px 'Arial', Sans-Serif; fill: ${langTextColor}; }
+      .licenseText { font: 400 11px 'Arial', Sans-Serif; fill: ${licenseTextColor}; }
+      .starText { font: 400 11px 'Arial', Sans-Serif; fill: ${starTextColor}; }
+      .watchText { font: 400 11px 'Arial', Sans-Serif; fill: ${watchTextColor}; }
+      .forkText { font: 400 11px 'Arial', Sans-Serif; fill: ${forkTextColor}; }
       .badge { font: 600 11px 'Arial', Sans-Serif; }
       .truncate {
         display: -webkit-box;
@@ -175,33 +219,33 @@ module.exports = async (req, res) => {
       <!-- Language and License -->
       ${repoData.language ? `
         <circle class="language-circle" cx="10" cy="8" r="6" fill="${langDotColor}" />
-        <text data-testid="language" class="datatext" x="20" y="12">${lang}</text>
+        <text class="langText" data-testid="language" x="20" y="12">${lang}</text>
       `: ''}
       
       ${showLicense ? `
       <svg fill="${licenseIconColor}" x="${repoData.language ? '80' : '10'}" y="0" width="16" height="16" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/>
       </svg>
-      <text data-testid="license" class="datatext" x="${repoData.language ? '100' : '30'}" y="12">${repoData.license ? repoData.license.name : 'null'}</text>
+      <text data-testid="license" class="licenseText" x="${repoData.language ? '100' : '30'}" y="12">${repoData.license ? repoData.license.name : 'null'}</text>
     ` : ''}
       
         <!-- Stars icon -->
         <svg fill="${starIconColor}" x="180" y="0" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
         </svg>
-        <text data-testid="stargazers" class="datatext" x="200" y="12">${stars}</text>
+        <text data-testid="stargazers" class="starText" x="200" y="12">${stars}</text>
   
         <!-- Watching icon -->
         <svg fill="${watchIconColor}" x="240" y="0" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path d="M8 3C4.2 3 1 6 1 8s3.2 5 7 5 7-2 7-5-3.2-5-7-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm0-5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
         </svg>
-        <text data-testid="watching" class="datatext" x="260" y="12">${watching}</text>
+        <text data-testid="watching" class="watchText" x="260" y="12">${watching}</text>
   
         <!-- Forks icon -->
         <svg fill="${forkIconColor}" x="300" y="0" viewBox="0 0 16 16" version="1.1" width="16" height="16">
           <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
         </svg>
-        <text data-testid="forkcount" class="datatext" x="320" y="12">${forks}</text>
+        <text data-testid="forkcount" class="forkText" x="320" y="12">${forks}</text>
       </g>
     </g>
     </svg>

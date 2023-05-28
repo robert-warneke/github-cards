@@ -4,7 +4,12 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
 ---
 
 ## GitHub Repo Cards
-Enhance your GitHub profile and repositories with customizable 'GitHub Repo Cards'. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
+Enhance your GitHub profile and repository READMEs with customizable 'GitHub Repo Cards'. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
+
+- [Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
+- [How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
+- [Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
+- [Themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md)
 
 ### 🖥️ Demo:
 > 🔍 Example of the default 'GitHub Repo Card':
@@ -81,26 +86,31 @@ Query parameters are added after the main URL using the '?' character, followed 
 > - `'user'` is a parameter key and `'robert-warneke'` is its value.
 > - `'repo'` is another parameter key and `'github-cards'` is its value.
 
-Available query parameters:
-| Query Parameters          | Description                                                               |
-| ------------------------- | -------------------------------------------                               |
-| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.          |
-| `repo`                    | The repository name. Default is 'github-cards'.                           |
-| `showUsername`            | Display the username in the card title. Default is 'false'.               | 
-| `showLicense`             | Display the repository license on the card. Default is 'true'.            | 
+##### Available query parameters:
+| Query Parameters          | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.            |
+| `repo`                    | The repository name. Default is 'github-cards'.                             |
+| `showUsername`            | Display the username in the card title. Default is 'false'.                 | 
+| `showLicense`             | Display the repository license on the card. Default is 'true'.              | 
 | `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
-| `bgColor`                 | Background color of the card.                                             | 
-| `borderColor`             | Border color of the card.                                                 |
-| `textColor`               | Color of all the card text.                                               | 
-| `titleTextColor`          | Color of the card title text. Overrides 'textColor'.                      | 
-| `descriptionTextColor`    | Color of the card description text. Overrides 'textColor'.                | 
-| `dataTextColor`           | Color of the card data text. Overrides 'textColor'.                       | 
-| `langDotColor`            | Color of the language dot.                                                | 
-| `iconColor`               | Color of all the icons.                                                   |
-| `repoIconColor`           | Color of the repo icon. Overrides 'iconColor'.                            |
-| `licenseIconColor`        | Color of the license icon. Overrides 'iconColor'.                         |
-| `starIconColor`           | Color of the star icon. Overrides 'iconColor'.                            |
-| `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                        |
-| `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                           |
+| `bgColor`                 | Background color of the card.                                               | 
+| `borderColor`             | Border color of the card.                                                   |
+| `textColor`               | Color of all the card text.                                                 | 
+| `titleTextColor`          | Color of the card title text. Overrides 'textColor'.                        | 
+| `descriptionTextColor`    | Color of the card description text. Overrides 'textColor'.                  | 
+| `dataTextColor`           | Color of the card data (language, license, stars, watching, and forks) text. Overrides 'textColor'. | 
+| `langTextColor`           | Color of the card language text. Overrides 'textColor' and 'dataTextColor'. | 
+| `licenseTextColor`        | Color of the card license text. Overrides 'textColor' and 'dataTextColor'.  | 
+| `starTextColor`           | Color of the card star text. Overrides 'textColor' and 'dataTextColor'.     | 
+| `watchTextColor`          | Color of the card watching text. Overrides 'textColor' and 'dataTextColor'. | 
+| `forkTextColor`           | Color of the card fork text. Overrides 'textColor' and 'dataTextColor'.     |
+| `langDotColor`            | Color of the language dot.                                                  | 
+| `iconColor`               | Color of all the icons.                                                     |
+| `repoIconColor`           | Color of the repo icon. Overrides 'iconColor'.                              |
+| `licenseIconColor`        | Color of the license icon. Overrides 'iconColor'.                           |
+| `starIconColor`           | Color of the star icon. Overrides 'iconColor'.                              |
+| `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                          |
+| `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                             |
 
 ---
