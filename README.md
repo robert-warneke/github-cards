@@ -94,7 +94,7 @@ Available query parameters:
 | `textColor`               | Color of all the card text.                                               | 
 | `titleTextColor`          | Color of the card title text. Overrides 'textColor'.                      | 
 | `descriptionTextColor`    | Color of the card description text. Overrides 'textColor'.                | 
-| `dataTextColor`           | Color of the card data text.                                              | 
+| `dataTextColor`           | Color of the card data text. Overrides 'textColor'.                       | 
 | `langDotColor`            | Color of the language dot.                                                | 
 | `iconColor`               | Color of all the icons.                                                   |
 | `repoIconColor`           | Color of the repo icon. Overrides 'iconColor'.                            |
