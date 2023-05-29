@@ -132,7 +132,8 @@ module.exports = async (req, res) => {
       }
 
       for (let month = 0; month < months.length; month++) {
-        if (month > today.getMonth() && year === today.getFullYear()) {
+        // Only skip if showFullYear is false and month is in future
+        if (!fullYear && month > today.getMonth() && year === today.getFullYear()) {
           continue;
         }
         const firstDayOfMonth = new Date(year, month, 1);
@@ -141,6 +142,7 @@ module.exports = async (req, res) => {
         const labelY = svgHeight - 10; // adjusted Y position of month label to make it closer to the chart
         svgCode += `  <text class="month-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10" fill="${monthLabelColor}">${months[month]}</text>\n`;
       }
+      
     }
   } catch (error) {
     console.error("Failed to fetch contribution data:", error);
