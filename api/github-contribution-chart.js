@@ -8,6 +8,7 @@ function getWeekNumberOfDate(date, firstSundayOfYear) {
 module.exports = async (req, res) => {
   const username = req.query.user || "robert-warneke";
   const year = Number(req.query.year) || new Date().getFullYear();
+  const fullYear = req.query.showFullYear === 'true';
   const showGitHubIcon = req.query.showGitHubIcon !== 'false';
 
   const weekHeight = 8;
@@ -16,6 +17,11 @@ module.exports = async (req, res) => {
   const levelColors = ["#ebedf0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"];
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  const bgColor = "#f6f8fa";
+  const borderColor = "#e1e4e8";
+  const dayLabelColor = "#000000";
+  const monthLabelColor = "#000000";
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);
@@ -28,7 +34,7 @@ module.exports = async (req, res) => {
 
   let svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">\n`;
 
-  svgCode += `<rect x="0" y="0" width="${svgWidth}" height="${svgHeight}" fill="#f6f8fa" stroke="#e1e4e8" stroke-opacity="1" ry="8"/>\n`;
+  svgCode += `<rect x="0" y="0" width="${svgWidth}" height="${svgHeight}" fill="${bgColor}" stroke="${borderColor}" stroke-opacity="1" ry="8"/>\n`;
 
   try {
     const firstSundayOfYear = new Date(firstDayOfYear);
@@ -93,7 +99,7 @@ module.exports = async (req, res) => {
       for (let day = 0; day < 7; day++) {
         const labelX = 10;
         const labelY = (day * (weekHeight + dayMargin)) + weekHeight + 40;
-        svgCode += `  <text class="weekday-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10">${weekdays[day]}</text>\n`;
+        svgCode += `  <text class="weekday-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10" fill="${dayLabelColor}">${weekdays[day]}</text>\n`;
       }
 
       const today = new Date();
@@ -109,10 +115,11 @@ module.exports = async (req, res) => {
 
           // Skip rendering for days before Jan 1st and after Dec 31st
           if ((week === 0 && day < firstDayOfYear.getDay()) || 
-              (week === weekCount - 1 && day > lastDayOfYear.getDay()) || 
-              (currentDay > today && year === currentYear)) {
-            continue;
-          }
+            (week === weekCount - 1 && day > lastDayOfYear.getDay()) || 
+            (currentDay > today && year === currentYear && !fullYear)) {
+          continue;
+        }
+      
 
           const contributionData = contributionDays.find((dayData) => dayData.weekday === day);
           const contributions = contributionData ? contributionData.contributionCount : 0;
@@ -125,15 +132,17 @@ module.exports = async (req, res) => {
       }
 
       for (let month = 0; month < months.length; month++) {
-        if (month > today.getMonth() && year === today.getFullYear()) {
+        // Only skip if showFullYear is false and month is in future
+        if (!fullYear && month > today.getMonth() && year === today.getFullYear()) {
           continue;
         }
         const firstDayOfMonth = new Date(year, month, 1);
         const weekOfMonth = getWeekNumberOfDate(firstDayOfMonth, firstSundayOfYear);
         const labelX = (weekOfMonth * (daySize + dayMargin)) + daySize + 22;
         const labelY = svgHeight - 10; // adjusted Y position of month label to make it closer to the chart
-        svgCode += `  <text class="month-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10">${months[month]}</text>\n`;
+        svgCode += `  <text class="month-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10" fill="${monthLabelColor}">${months[month]}</text>\n`;
       }
+      
     }
   } catch (error) {
     console.error("Failed to fetch contribution data:", error);
