@@ -129,6 +129,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.            |
 | `year`                    | Data for the specified year. Defaults to the current year.                  |
 | `showGitHubIcon`          | Displays the GitHub Icon... or doesn't! Default is `'true'`                 |
+| `showFullYear`            | Displays the current year data for beyond the current day... or doesn't! Default is `'false'` |
 
 ---
 
