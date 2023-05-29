@@ -113,7 +113,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                          |
 | `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                             |
 
-## GitHub Contribution Chart
+## GitHub Contribution Chart Cards
 
 > 🔍 Example of the default 'GitHub Contribution Chart':
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
@@ -125,7 +125,8 @@ Query parameters are added after the main URL using the '?' character, followed 
 | Query Parameters          | Description                                                                 |
 | ------------------------- | --------------------------------------------------------------------------- |
 | `user`                    | The username of the GitHub account. Default is 'robert-warneke'.            |
-| `year`                    | Data for the specified year. Defaults to the current year.                 |
+| `year`                    | Data for the specified year. Defaults to the current year.                  |
+| `showGitHubIcon`          | Displays the GitHub Icon... or doesn't!                                     |
 
 ---
 
