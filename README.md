@@ -118,6 +118,9 @@ Query parameters are added after the main URL using the '?' character, followed 
 > 🔍 Example of the default 'GitHub Contribution Chart':
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
 
+> 🔍 Example of the default 'GitHub Contribution Chart' with specified `year`:
+> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+
 ---
 
 # 🤝 Support
