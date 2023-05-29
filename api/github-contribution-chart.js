@@ -1,5 +1,10 @@
 const fetch = require("node-fetch");
 
+function getWeekNumberOfDate(date, firstSundayOfYear) {
+  const diff = date - firstSundayOfYear + (firstSundayOfYear.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000;
+  return Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
+}
+
 module.exports = async (req, res) => {
   const username = req.query.username || "robert-warneke";
   const year = Number(req.query.year) || new Date().getFullYear();
@@ -23,11 +28,11 @@ module.exports = async (req, res) => {
   let svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">\n`;
 
   try {
-    const firstSunday = new Date(firstDayOfYear);
-    while (firstSunday.getDay() !== 0) {
-      firstSunday.setDate(firstSunday.getDate() - 1);
+    const firstSundayOfYear = new Date(firstDayOfYear);
+    while (firstSundayOfYear.getDay() !== 0) {
+      firstSundayOfYear.setDate(firstSundayOfYear.getDate() - 1);
     }
-    const from = firstSunday.toISOString();
+    const from = firstSundayOfYear.toISOString();
 
     const to = lastDayOfYear.toISOString();
 
@@ -109,8 +114,10 @@ module.exports = async (req, res) => {
         if (month > today.getMonth() && year === today.getFullYear()) {
           continue;
         }
-        const labelX = (month * 4.34 * (daySize + dayMargin)) + daySize + 20;
-        const labelY = svgHeight - 20;
+        const firstDayOfMonth = new Date(year, month, 1);
+        const weekOfMonth = getWeekNumberOfDate(firstDayOfMonth, firstSundayOfYear);
+        const labelX = (weekOfMonth * (daySize + dayMargin)) + daySize + 20;
+        const labelY = svgHeight - 30; // adjusted Y position of month label to make it closer to the chart
         svgCode += `  <text class="month-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10">${months[month]}</text>\n`;
       }
     }
