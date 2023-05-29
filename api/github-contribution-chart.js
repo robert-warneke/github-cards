@@ -74,7 +74,7 @@ module.exports = async (req, res) => {
 
       const currentYear = new Date().getFullYear();
       const yearText = year === currentYear ? `${year}: ${totalContributions} Contributions (so far)` : `${year}: ${totalContributions} Contributions`;
-      svgCode += `<text x="20" y="20" text-anchor="start" font-size="14">${yearText}</text>\n`;
+      svgCode += `<text x="10" y="30" text-anchor="start" font-size="14">${yearText}</text>\n`;
 
       for (let day = 0; day < 7; day++) {
         const labelX = 10;
@@ -102,7 +102,7 @@ module.exports = async (req, res) => {
 
           const contributionData = contributionDays.find((dayData) => dayData.weekday === day);
           const contributions = contributionData ? contributionData.contributionCount : 0;
-          const translateX = (week * (daySize + dayMargin)) + daySize + 20;
+          const translateX = (week * (daySize + dayMargin)) + daySize + 22;
           const translateY = (day * (weekHeight + dayMargin)) + 40;
           const fill = levelColors[Math.min(contributions, levelColors.length - 1)];
 
@@ -116,7 +116,7 @@ module.exports = async (req, res) => {
         }
         const firstDayOfMonth = new Date(year, month, 1);
         const weekOfMonth = getWeekNumberOfDate(firstDayOfMonth, firstSundayOfYear);
-        const labelX = (weekOfMonth * (daySize + dayMargin)) + daySize + 20;
+        const labelX = (weekOfMonth * (daySize + dayMargin)) + daySize + 22;
         const labelY = svgHeight - 30; // adjusted Y position of month label to make it closer to the chart
         svgCode += `  <text class="month-label" x="${labelX}" y="${labelY}" text-anchor="start" font-size="10">${months[month]}</text>\n`;
       }
