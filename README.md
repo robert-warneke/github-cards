@@ -121,6 +121,12 @@ Query parameters are added after the main URL using the '?' character, followed 
 > 🔍 Example of the default 'GitHub Contribution Chart' with specified `year`:
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
 
+##### Available query parameters:
+| Query Parameters          | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.            |
+| `year`                    | Data for the specified year. Defaults to the current year.                 |
+
 ---
 
 # 🤝 Support

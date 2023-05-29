@@ -6,7 +6,7 @@ function getWeekNumberOfDate(date, firstSundayOfYear) {
 }
 
 module.exports = async (req, res) => {
-  const username = req.query.username || "robert-warneke";
+  const username = req.query.user || "robert-warneke";
   const year = Number(req.query.year) || new Date().getFullYear();
 
   const weekHeight = 8;
@@ -26,6 +26,9 @@ module.exports = async (req, res) => {
   const svgHeight = chartHeight + 80;
 
   let svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">\n`;
+
+  svgCode += `<rect x="0" y="0" width="${svgWidth}" height="${svgHeight}" fill="#f6f8fa" stroke="#e1e4e8" stroke-opacity="1" ry="8"/>\n`;
+
 
   try {
     const firstSundayOfYear = new Date(firstDayOfYear);
