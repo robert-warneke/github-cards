@@ -36,6 +36,31 @@ module.exports = async (req, res) => {
 
   svgCode += `<rect x="0" y="0" width="${svgWidth}" height="${svgHeight}" fill="${bgColor}" stroke="${borderColor}" stroke-opacity="1" ry="8"/>\n`;
 
+// Define color box properties
+const colorBoxSize = 10;
+const colorBoxMargin = 4;
+const colorBoxLabelMargin = 5; // to add some space between box and label
+const keyStartX = svgWidth - (levelColors.length * (colorBoxSize + colorBoxMargin)) - 40; // Adjust as per your needs - added -70 to move it to the left
+const keyStartY = 18; // Adjust as per your needs
+
+// Inside your loop through each level color
+for (let i = 0; i < levelColors.length; i++) {
+  // Determine box position
+  const boxX = keyStartX + (i * (colorBoxSize + colorBoxMargin));
+  const boxY = keyStartY;
+
+  // Add color box
+  svgCode += `  <rect class="color-box" width="${colorBoxSize}" height="${colorBoxSize}" x="${boxX}" y="${boxY}" fill="${levelColors[i]}" />\n`;
+
+  // Add color box label
+  if (i === 0) {
+    svgCode += `  <text class="color-box-label" x="${boxX - colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="end" font-size="10" fill="${monthLabelColor}">Less</text>\n`;
+  } else if (i === levelColors.length - 1) {
+    svgCode += `  <text class="color-box-label" x="${boxX + colorBoxSize + colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="start" font-size="10" fill="${monthLabelColor}">More</text>\n`;
+  }
+
+}
+
   try {
     const firstSundayOfYear = new Date(firstDayOfYear);
     while (firstSundayOfYear.getDay() !== 0) {
