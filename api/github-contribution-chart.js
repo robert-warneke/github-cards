@@ -26,6 +26,7 @@ module.exports = async (req, res) => {
   const keyLabelColor = "#000000";
   const yearLabelColor = "#000000"
   const userLabelColor = "#000000"
+  const githubIconColor = "#000000"
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);
