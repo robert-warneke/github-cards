@@ -119,7 +119,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 ### 🖥️ Demo:
 
-> 🔍 Example of the default 'GitHub Contribution Chart':
+> 🔍 Example of the default 'GitHub Contribution Chart Card':
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
 
@@ -134,6 +134,11 @@ Query parameters are added after the main URL using the '?' character, followed 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+
+### ⚙️ Customization:
+You can customize the 'GitHub Contribution Chart Card' by providing query parameters in the URL.
+
+Query parameters are added after the main URL using the '?' character, followed by a series of key=value pairs, separated by '&'.
 
 ##### Available query parameters:
 | Query Parameters          | Description                                                                 |
