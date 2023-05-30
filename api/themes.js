@@ -69,6 +69,11 @@ const themes = {
     watchIcon: '#fffbb3',
     forkIcon: '#fffbb3',
     langDot: '#ff69b4',
+    level0: '#fffbb3',
+    level1: '#F8BBD0',
+    level2: '#F06292',
+    level3: '#E91E63',
+    level4: '#D81B60',
   }),
   // ...any other themes you want to define
 };
