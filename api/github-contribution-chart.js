@@ -15,6 +15,12 @@ module.exports = async (req, res) => {
   const theme = req.query.theme || 'light';
   const bgColorQuery = req.query.bgColor || null;
   const borderColorQuery = req.query.borderColor || null;
+  const textColorQuery = req.query.textColor || null;
+  const dayLabelColorQuery = req.query.dayLabelColor || null;
+  const monthLabelColorQuery = req.query.monthLabelColor || null;
+  const keyLabelColorQuery = req.query.keyLabelColor || null;
+  const yearLabelColorQuery = req.query.yearLabelColor || null;
+  const userLabelColorQuery = req.query.userLabelColor || null;
 
   const weekHeight = 8;
   const daySize = 10;
@@ -34,13 +40,43 @@ module.exports = async (req, res) => {
   if (borderColorQuery) {
     borderColor = '#' + borderColorQuery
   }
-  
-  const dayLabelColor = "#000000";
-  const monthLabelColor = "#000000";
-  const keyLabelColor = "#000000";
-  const yearLabelColor = "#000000"
-  const userLabelColor = "#000000"
-  const githubIconColor = "#000000"
+
+  let textColor = themeColors.text;
+  let dayLabelColor = themeColors.dayLabel || textColor;
+  let monthLabelColor = themeColors.monthLabel || textColor;
+  let keyLabelColor = themeColors.keyLabel || textColor;
+  let yearLabelColor = themeColors.yearLabel || textColor;
+  let userLabelColor = themeColors.userLabel || textColor;
+  if (textColorQuery) {
+    textColor = '#' + textColorQuery;
+    dayLabelColor = textColor;
+    monthLabelColor = textColor;
+    keyLabelColor = textColor;
+    yearLabelColor = textColor;
+    userLabelColor = textColor;
+  }
+
+  if (dayLabelColorQuery) {
+    dayLabelColor = '#' + dayLabelColorQuery;
+  }
+
+  if (monthLabelColorQuery) {
+    monthLabelColor = '#' + monthLabelColorQuery;
+  }
+
+  if (keyLabelColorQuery) {
+    keyLabelColor = '#' + keyLabelColorQuery;
+  }
+
+  if (yearLabelColorQuery) {
+    yearLabelColor = '#' + yearLabelColorQuery;
+  }
+
+  if (userLabelColorQuery) {
+    userLabelColor = '#' + userLabelColorQuery;
+  }
+
+  const githubIconColor = "#000000";
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);

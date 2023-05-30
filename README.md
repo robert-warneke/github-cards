@@ -194,15 +194,22 @@ Query parameters are added after the main URL using the '?' character, followed 
 > - `'year'` is another parameter key and `'2023'` is its value.
 
 ##### Available query parameters:
-| Query Parameters          | Description                                                                 |
-| ------------------------- | --------------------------------------------------------------------------- |
-| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.            |
-| `year`                    | Data for the specified year. Defaults to the current year.                  |
+| Query Parameters          | Description                                                                  |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| `user`                    | The username of the GitHub account. Default is 'robert-warneke'.             |
+| `year`                    | Data for the specified year. Defaults to the current year.                   |
 | `showFullYear`            | Displays the current year data beyond the current day... or doesn't! Default is `'false'` |
 | `showUsername`            | Displays the GitHub username in the top center of the card... or doesn't! Default is `'true'` |
-| `showGitHubIcon`          | Displays the GitHub Icon... or doesn't! Default is `'true'`                 |
-| `bgColor`                 | Background color of the card                                                |
-| `borderColor`             | Border color of the card                                                    |
+| `showGitHubIcon`          | Displays the GitHub Icon... or doesn't! Default is `'true'`                  |
+| `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
+| `bgColor`                 | Background color of the card.                                                |
+| `borderColor`             | Border color of the card.                                                    |
+| `textColor`               | Color of all the card text.                                                  |
+| `yearLabelColor`          | Color of the year and total contribution text labels. Overrides 'textColor'. |
+| `userLabelColor`          | Color of the 'username' text. Overrides 'textColor'.                         |
+| `dayLabelColor`           | Color of the day labels. Overrides 'textColor'.                              |
+| `monthLabelColor`         | Color of the month labels. Overrides 'textColor'.                            |
+| `keyLabelColor`           | Color of the 'color box key' labels. Overrides 'textColor'.                  |
 
 ---
 
