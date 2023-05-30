@@ -163,7 +163,20 @@ Query parameters are added after the main URL using the '?' character, followed 
 > ```
 
 ### 📋 How to Use:
-Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
+Follow these steps to use the 'GitHub Contribution Chart Card' in your README file or any other place:
+
+1. Embed the URL as an image:
+
+```md
+![GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=USERNAME)
+```
+
+2. Replace `'USERNAME'` with **your GitHub username**.
+
+> 🔍 Example:
+> ```md
+> ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke)
+> ```
 
 ### ⚙️ Customization:
 You can customize the 'GitHub Contribution Chart Card' by providing query parameters in the URL.
