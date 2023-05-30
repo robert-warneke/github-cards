@@ -6,7 +6,7 @@ const getLangDotColor = (lang) => {
 
 const themes = {
   dark: (lang = 'Default') => ({ 
-    background: '#212121', 
+    background: '#333333', 
     border: '#8ab4f8', 
     titleText: '#8ab4f8', 
     descriptionText: '#f5f5f5', 
@@ -14,6 +14,11 @@ const themes = {
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang),
     text: '#f5f5f5',
+    level0: '#555555',
+    level1: '#0e4429',
+    level2: '#006d32',
+    level3: '#26a641',
+    level4: '#39d353',
   }),
   light: (lang = 'Default') => ({ 
     background: '#f5f5f5', 
@@ -24,6 +29,11 @@ const themes = {
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang),
     text: '#333333',
+    level0: '#ebedf0',
+    level1: '#0e4429',
+    level2: '#006d32',
+    level3: '#26a641',
+    level4: '#39d353',
   }),
   straightBlack: (lang = 'Default') => ({ 
     background: '#000000', 
