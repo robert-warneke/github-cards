@@ -9,6 +9,7 @@ module.exports = async (req, res) => {
   const username = req.query.user || "robert-warneke";
   const year = Number(req.query.year) || new Date().getFullYear();
   const fullYear = req.query.showFullYear === 'true';
+  const showUsername = req.query.showUsername !== 'false';
   const showGitHubIcon = req.query.showGitHubIcon !== 'false';
 
   const weekHeight = 8;
@@ -22,6 +23,7 @@ module.exports = async (req, res) => {
   const borderColor = "#e1e4e8";
   const dayLabelColor = "#000000";
   const monthLabelColor = "#000000";
+  const keyLabelColor = "#000000";
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);
@@ -54,9 +56,9 @@ for (let i = 0; i < levelColors.length; i++) {
 
   // Add color box label
   if (i === 0) {
-    svgCode += `  <text class="color-box-label" x="${boxX - colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="end" font-size="10" fill="${monthLabelColor}">Less</text>\n`;
+    svgCode += `  <text class="color-box-label" x="${boxX - colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="end" font-size="10" fill="${keyLabelColor}">Less</text>\n`;
   } else if (i === levelColors.length - 1) {
-    svgCode += `  <text class="color-box-label" x="${boxX + colorBoxSize + colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="start" font-size="10" fill="${monthLabelColor}">More</text>\n`;
+    svgCode += `  <text class="color-box-label" x="${boxX + colorBoxSize + colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="start" font-size="10" fill="${keyLabelColor}">More</text>\n`;
   }
 
 }
@@ -110,6 +112,11 @@ for (let i = 0; i < levelColors.length; i++) {
       const yearText = year === currentYear ? `${year}: ${totalContributions} Contributions (so far)` : `${year}: ${totalContributions} Contributions`;
       svgCode += `<text x="35" y="25" text-anchor="start" font-size="14">${yearText}</text>\n`;
 
+      if (showUsername) {
+        const usernameX = svgWidth / 2;
+        svgCode += `<text x="${usernameX}" y="25" text-anchor="middle" font-size="16">${username}</text>\n`;
+      }
+
       // Before the yearText SVG element
       if (showGitHubIcon) {
         svgCode += `
@@ -118,8 +125,6 @@ for (let i = 0; i < levelColors.length; i++) {
         </svg>
       `;
       }
-
-
 
       for (let day = 0; day < 7; day++) {
         const labelX = 10;
