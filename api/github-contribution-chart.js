@@ -23,6 +23,7 @@ module.exports = async (req, res) => {
   const borderColor = "#e1e4e8";
   const dayLabelColor = "#000000";
   const monthLabelColor = "#000000";
+  const keyLabelColor = "#000000";
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);
@@ -55,9 +56,9 @@ for (let i = 0; i < levelColors.length; i++) {
 
   // Add color box label
   if (i === 0) {
-    svgCode += `  <text class="color-box-label" x="${boxX - colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="end" font-size="10" fill="${monthLabelColor}">Less</text>\n`;
+    svgCode += `  <text class="color-box-label" x="${boxX - colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="end" font-size="10" fill="${keyLabelColor}">Less</text>\n`;
   } else if (i === levelColors.length - 1) {
-    svgCode += `  <text class="color-box-label" x="${boxX + colorBoxSize + colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="start" font-size="10" fill="${monthLabelColor}">More</text>\n`;
+    svgCode += `  <text class="color-box-label" x="${boxX + colorBoxSize + colorBoxLabelMargin}" y="${boxY + colorBoxSize/2}" dominant-baseline="central" text-anchor="start" font-size="10" fill="${keyLabelColor}">More</text>\n`;
   }
 
 }
