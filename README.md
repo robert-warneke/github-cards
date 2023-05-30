@@ -204,13 +204,13 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `theme`                   | The color [theme](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md) of the card. Default is 'light'. |
 | `bgColor`                 | Background color of the card.                                                |
 | `borderColor`             | Border color of the card.                                                    |
-| `textColor`               | Color of all the card text.                                                  |
-| `yearLabelColor`          | Color of the year and total contribution text labels. Overrides 'textColor'. |
-| `userLabelColor`          | Color of the 'username' text. Overrides 'textColor'.                         |
-| `dayLabelColor`           | Color of the day labels. Overrides 'textColor'.                              |
-| `monthLabelColor`         | Color of the month labels. Overrides 'textColor'.                            |
-| `keyLabelColor`           | Color of the 'color box key' labels. Overrides 'textColor'.                  |
-| `githubIconColor`         | Color of the GitHub icon.                                                    |
+| `textColor`               | Color of all the card text. *Applies to GitHub icon.*                          |
+| `yearLabelColor`          | Color of the year and total contribution text labels. *Overrides 'textColor'.* |
+| `userLabelColor`          | Color of the 'username' text. *Overrides 'textColor'.*                         |
+| `dayLabelColor`           | Color of the day labels. *Overrides 'textColor'.*                              |
+| `monthLabelColor`         | Color of the month labels. *Overrides 'textColor'.*                            |
+| `keyLabelColor`           | Color of the 'color box key' labels. *Overrides 'textColor'.*                  |
+| `githubIconColor`         | Color of the GitHub icon. *Overrides 'textColor'.*                             |
 
 ---
 
