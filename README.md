@@ -1,15 +1,15 @@
 # GitHub Cards
 Generate a variety of dynamic and aesthetically appealing GitHub stat cards, perfect for integrating into GitHub READMEs and beyond. 📊📈
 
-- [GitHub Cards]()
-    - [GitHub Repo Cards]()
-        - [🖥️ Demo]()
+- [GitHub Cards](https://github.com/robert-warneke/github-cards#github-cards)
+    - [GitHub Repo Cards](https://github.com/robert-warneke/github-cards#github-repo-cards)
+        - [🖥️ Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
+        - [📋 How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
+        - [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
+    - [GitHub Contribution Chart Cards](https://github.com/robert-warneke/github-cards#github-contribution-chart-cards)
+        - [🖥️ Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo-1)
         - [📋 How to Use]()
-        - [⚙️ Customization]()
-    - [GitHub Contribution Chart Cards]()
-        - [🖥️ Demo]()
-        - [📋 How to Use]()
-        - [⚙️ Customization]()
+        - [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization-1)
 - [🤝 Support]()
 - [📬 Get in Touch]()
 
@@ -145,6 +145,9 @@ Query parameters are added after the main URL using the '?' character, followed 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+
+### 📋 How to Use:
+Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
 
 ### ⚙️ Customization:
 You can customize the 'GitHub Contribution Chart Card' by providing query parameters in the URL.
