@@ -7,20 +7,21 @@ function getWeekNumberOfDate(date, firstSundayOfYear) {
 }
 
 module.exports = async (req, res) => {
-  const username = req.query.user || "robert-warneke";
-  const year = Number(req.query.year) || new Date().getFullYear();
-  const fullYear = req.query.showFullYear === 'true';
-  const showUsername = req.query.showUsername !== 'false';
-  const showGitHubIcon = req.query.showGitHubIcon !== 'false';
-  const theme = req.query.theme || 'light';
-  const bgColorQuery = req.query.bgColor || null;
-  const borderColorQuery = req.query.borderColor || null;
-  const textColorQuery = req.query.textColor || null;
-  const dayLabelColorQuery = req.query.dayLabelColor || null;
-  const monthLabelColorQuery = req.query.monthLabelColor || null;
-  const keyLabelColorQuery = req.query.keyLabelColor || null;
-  const yearLabelColorQuery = req.query.yearLabelColor || null;
-  const userLabelColorQuery = req.query.userLabelColor || null;
+  let username = req.query.user || "robert-warneke";
+  let year = Number(req.query.year) || new Date().getFullYear();
+  let fullYear = req.query.showFullYear === 'true';
+  let showUsername = req.query.showUsername !== 'false';
+  let showGitHubIcon = req.query.showGitHubIcon !== 'false';
+  let theme = req.query.theme || 'light';
+  let bgColorQuery = req.query.bgColor || null;
+  let borderColorQuery = req.query.borderColor || null;
+  let textColorQuery = req.query.textColor || null;
+  let dayLabelColorQuery = req.query.dayLabelColor || null;
+  let monthLabelColorQuery = req.query.monthLabelColor || null;
+  let keyLabelColorQuery = req.query.keyLabelColor || null;
+  let yearLabelColorQuery = req.query.yearLabelColor || null;
+  let userLabelColorQuery = req.query.userLabelColor || null;
+  let githubIconColorQuery = req.query.githubIconColor || null;
 
   const weekHeight = 8;
   const daySize = 10;
@@ -47,6 +48,7 @@ module.exports = async (req, res) => {
   let keyLabelColor = themeColors.keyLabel || textColor;
   let yearLabelColor = themeColors.yearLabel || textColor;
   let userLabelColor = themeColors.userLabel || textColor;
+  let githubIconColor = themeColors.githubIcon || textColor;
   if (textColorQuery) {
     textColor = '#' + textColorQuery;
     dayLabelColor = textColor;
@@ -54,6 +56,7 @@ module.exports = async (req, res) => {
     keyLabelColor = textColor;
     yearLabelColor = textColor;
     userLabelColor = textColor;
+    githubIconColor = textColor;
   }
 
   if (dayLabelColorQuery) {
@@ -76,7 +79,9 @@ module.exports = async (req, res) => {
     userLabelColor = '#' + userLabelColorQuery;
   }
 
-  const githubIconColor = "#000000";
+  if (githubIconColorQuery) {
+    githubIconColor = '#' + githubIconColorQuery;
+  }
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);

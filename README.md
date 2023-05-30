@@ -210,6 +210,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `dayLabelColor`           | Color of the day labels. Overrides 'textColor'.                              |
 | `monthLabelColor`         | Color of the month labels. Overrides 'textColor'.                            |
 | `keyLabelColor`           | Color of the 'color box key' labels. Overrides 'textColor'.                  |
+| `githubIconColor`         | Color of the GitHub icon.                                                    |
 
 ---
 

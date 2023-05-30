@@ -49,6 +49,7 @@ const themes = {
   warneke: (lang = 'Default') => ({
     background: '#554dc7',
     border: '#b4e8e6',
+    text: '#f5f5f5',
     titleText: '#fffbb3',
     descriptionText: '#f5f5f5',
     dataText: '#ffffcc',
