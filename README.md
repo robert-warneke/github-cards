@@ -10,8 +10,8 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
         - [Demo]()
         - [How to Use]()
         - [Customization]()
-- [Support]()
-- [Get in Touch]()
+- [🤝 Support]()
+- [📬 Get in Touch]()
 
 ---
 
