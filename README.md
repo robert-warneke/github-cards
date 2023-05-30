@@ -119,7 +119,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
 
-> 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`.:
+> 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
 
@@ -127,7 +127,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
 
-> 🔍 Example of the `'showUsername'` parameter key with the value `'false'`.:
+> 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
 
