@@ -8,10 +8,10 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
         - [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
     - [GitHub Contribution Chart Cards](https://github.com/robert-warneke/github-cards#github-contribution-chart-cards)
         - [🖥️ Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo-1)
-        - [📋 How to Use]()
+        - [📋 How to Use](https://github.com/robert-warneke/github-cards/#-how-to-use-1)
         - [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization-1)
-- [🤝 Support]()
-- [📬 Get in Touch]()
+- [🤝 Support](https://github.com/robert-warneke/github-cards/#-support)
+- [📬 Get in Touch](https://github.com/robert-warneke/github-cards/#-get-in-touch)
 
 ---
 
