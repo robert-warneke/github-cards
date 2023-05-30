@@ -20,7 +20,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `'showUsername'` parameter key with the value `'true'`:
+> 🔍 Example of the `'showUsername'` parameter key with the value `'true'`:
 >
 > [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 >
@@ -28,7 +28,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'dark'`:
+> 🔍 Example of the `'theme'` parameter key with the value `'dark'`:
 >
 > [![GitHub Repo Card with dark theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 >
@@ -37,7 +37,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ```
 > &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
-> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'straightBlack'`:
+> 🔍 Example of the `'theme'` parameter key with the value `'straightBlack'`:
 >
 > [![GitHub Repo Card with straightBlack theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)](https://github.com/robert-warneke/github-cards)
 >
@@ -47,7 +47,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
 
-> 🔍 Example of the 'GitHub Repo Card' `'showLicense'` parameter key with the value `'false'`:
+> 🔍 Example of the `'showLicense'` parameter key with the value `'false'`:
 >
 > [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
 >
