@@ -132,27 +132,66 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 > 🔍 Example of the default 'GitHub Contribution Chart Card':
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart)
+>
+> ```md
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke)
+> ```
 
 > 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
+> ![GitHub Contribution Chart Card with 'showFullYear'](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
+>
+> ```md
+> ![GitHub Contribution Chart Card with 'showFullYear'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showFullYear=true)
+> ```
 
 > 🔍 Example of the `year` parameter key with a specified year:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+> ![GitHub Contribution Chart Card with 'year'](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+>
+> ```md
+> ![GitHub Contribution Chart Card with 'year'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2020)
+> ```
 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+>
+> ```md
+> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
+> ```
 
 ### 📋 How to Use:
-Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
+Follow these steps to use the 'GitHub Contribution Chart Card' in your README file or any other place:
+
+1. Embed the URL as an image:
+
+```md
+![GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=USERNAME)
+```
+
+2. Replace `'USERNAME'` with **your GitHub username**.
+
+> 🔍 Example:
+> ```md
+> ![GitHub Repo Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke)
+> ```
 
 ### ⚙️ Customization:
 You can customize the 'GitHub Contribution Chart Card' by providing query parameters in the URL.
 
 Query parameters are added after the main URL using the '?' character, followed by a series of key=value pairs, separated by '&'.
+
+> 🔍 Example:
+> ```md
+> https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2023
+> ```
+>
+> In this example:
+> - `https://my-github-cards.vercel.app/api/github-contribution-chart` is the main URL.
+> - `'user'` is a parameter key and `'robert-warneke'` is its value.
+> - `'year'` is another parameter key and `'2023'` is its value.
 
 ##### Available query parameters:
 | Query Parameters          | Description                                                                 |
