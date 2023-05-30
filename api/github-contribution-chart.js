@@ -1,4 +1,5 @@
 const fetch = require("node-fetch");
+const themes = require('./themes');
 
 function getWeekNumberOfDate(date, firstSundayOfYear) {
   const diff = date - firstSundayOfYear + (firstSundayOfYear.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000;
@@ -11,6 +12,7 @@ module.exports = async (req, res) => {
   const fullYear = req.query.showFullYear === 'true';
   const showUsername = req.query.showUsername !== 'false';
   const showGitHubIcon = req.query.showGitHubIcon !== 'false';
+  const theme = req.query.theme || 'light';
 
   const weekHeight = 8;
   const daySize = 10;
@@ -18,6 +20,8 @@ module.exports = async (req, res) => {
   const levelColors = ["#ebedf0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"];
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  const themeColors = themes[theme](lang);
 
   const bgColor = "#f6f8fa";
   const borderColor = "#e1e4e8";
