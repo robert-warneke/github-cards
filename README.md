@@ -3,13 +3,13 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
 
 - [GitHub Cards]()
     - [GitHub Repo Cards]()
-        - [Demo]()
-        - [How to Use]()
-        - [Customization]()
+        - [🖥️ Demo]()
+        - [📋 How to Use]()
+        - [⚙️ Customization]()
     - [GitHub Contribution Chart Cards]()
-        - [Demo]()
-        - [How to Use]()
-        - [Customization]()
+        - [🖥️ Demo]()
+        - [📋 How to Use]()
+        - [⚙️ Customization]()
 - [🤝 Support]()
 - [📬 Get in Touch]()
 
@@ -18,10 +18,9 @@ Generate a variety of dynamic and aesthetically appealing GitHub stat cards, per
 ## GitHub Repo Cards
 Enhance your GitHub profile and repository READMEs with customizable 'GitHub Repo Cards'. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
 
-- [Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
-- [How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
-- [Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
-- [Themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md)
+- [🖥️ Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
+- [📋 How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
+- [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
 
 ### 🖥️ Demo:
 > 🔍 Example of the default 'GitHub Repo Card':
