@@ -9,6 +9,7 @@ module.exports = async (req, res) => {
   const username = req.query.user || "robert-warneke";
   const year = Number(req.query.year) || new Date().getFullYear();
   const fullYear = req.query.showFullYear === 'true';
+  const showUsername = req.query.showUsername !== 'false';
   const showGitHubIcon = req.query.showGitHubIcon !== 'false';
 
   const weekHeight = 8;
@@ -110,6 +111,11 @@ for (let i = 0; i < levelColors.length; i++) {
       const yearText = year === currentYear ? `${year}: ${totalContributions} Contributions (so far)` : `${year}: ${totalContributions} Contributions`;
       svgCode += `<text x="35" y="25" text-anchor="start" font-size="14">${yearText}</text>\n`;
 
+      if (showUsername) {
+        const usernameX = svgWidth / 2;
+        svgCode += `<text x="${usernameX}" y="25" text-anchor="middle" font-size="16">${username}</text>\n`;
+      }
+
       // Before the yearText SVG element
       if (showGitHubIcon) {
         svgCode += `
@@ -118,8 +124,6 @@ for (let i = 0; i < levelColors.length; i++) {
         </svg>
       `;
       }
-
-
 
       for (let day = 0; day < 7; day++) {
         const labelX = 10;
