@@ -140,26 +140,26 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 > 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`:
 >
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
+> ![GitHub Contribution Chart Card with 'showFullYear'](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
 >
 > ```md
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showFullYear=true)
+> ![GitHub Contribution Chart Card with 'showFullYear'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showFullYear=true)
 > ```
 
 > 🔍 Example of the `year` parameter key with a specified year:
 >
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+> ![GitHub Contribution Chart Card with 'year'](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
 >
 > ```md
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2020)
+> ![GitHub Contribution Chart Card with 'year'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2020)
 > ```
 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
 >
 > ```md
-> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
+> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
 > ```
 
 ### 📋 How to Use:
