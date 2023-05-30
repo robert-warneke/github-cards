@@ -1,15 +1,26 @@
 # GitHub Cards
 Generate a variety of dynamic and aesthetically appealing GitHub stat cards, perfect for integrating into GitHub READMEs and beyond. 📊📈
 
+- [GitHub Cards]()
+    - [GitHub Repo Cards]()
+        - [🖥️ Demo]()
+        - [📋 How to Use]()
+        - [⚙️ Customization]()
+    - [GitHub Contribution Chart Cards]()
+        - [🖥️ Demo]()
+        - [📋 How to Use]()
+        - [⚙️ Customization]()
+- [🤝 Support]()
+- [📬 Get in Touch]()
+
 ---
 
 ## GitHub Repo Cards
 Enhance your GitHub profile and repository READMEs with customizable 'GitHub Repo Cards'. Display information about your repositories in a neat, visual card format that can be tailored to your liking.
 
-- [Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
-- [How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
-- [Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
-- [Themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md)
+- [🖥️ Demo](https://github.com/robert-warneke/github-cards#%EF%B8%8F-demo)
+- [📋 How to Use](https://github.com/robert-warneke/github-cards#-how-to-use)
+- [⚙️ Customization](https://github.com/robert-warneke/github-cards#%EF%B8%8F-customization)
 
 ### 🖥️ Demo:
 > 🔍 Example of the default 'GitHub Repo Card':
@@ -20,7 +31,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ![Default GitHub Repo Card](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `'showUsername'` parameter key with the value `'true'`:
+> 🔍 Example of the `'showUsername'` parameter key with the value `'true'`:
 >
 > [![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)](https://github.com/robert-warneke/github-cards)
 >
@@ -28,7 +39,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ![GitHub Repo Card with showUsername](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showUsername=true)
 > ```
 
-> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'dark'`:
+> 🔍 Example of the `'theme'` parameter key with the value `'dark'`:
 >
 > [![GitHub Repo Card with dark theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=dark)](https://github.com/robert-warneke/github-cards)
 >
@@ -37,7 +48,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > ```
 > &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
-> 🔍 Example of the 'GitHub Repo Card' `'theme'` parameter key with the value `'straightBlack'`:
+> 🔍 Example of the `'theme'` parameter key with the value `'straightBlack'`:
 >
 > [![GitHub Repo Card with straightBlack theme](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&theme=straightBlack)](https://github.com/robert-warneke/github-cards)
 >
@@ -47,7 +58,7 @@ Enhance your GitHub profile and repository READMEs with customizable 'GitHub Rep
 > &#9432; Click here for a [complete list of available themes](https://github.com/robert-warneke/github-cards/blob/master/docs/THEMES.md).
 
 
-> 🔍 Example of the 'GitHub Repo Card' `'showLicense'` parameter key with the value `'false'`:
+> 🔍 Example of the `'showLicense'` parameter key with the value `'false'`:
 >
 > [![GitHub Repo Card with showLicense](https://my-github-cards.vercel.app/api/github-repo-card?user=robert-warneke&repo=github-cards&showLicense=false)](https://github.com/robert-warneke/github-cards)
 >
@@ -113,19 +124,32 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                          |
 | `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                             |
 
+---
+
 ## GitHub Contribution Chart Cards
 
-> 🔍 Example of the default 'GitHub Contribution Chart':
+### 🖥️ Demo:
+
+> 🔍 Example of the default 'GitHub Contribution Chart Card':
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
 
-> 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`.:
+> 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
 
-> 🔍 Example of the default 'GitHub Contribution Chart' with specified `year`:
+> 🔍 Example of the `year` parameter key with a specified year:
 >
 > ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+
+> 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
+>
+> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+
+### ⚙️ Customization:
+You can customize the 'GitHub Contribution Chart Card' by providing query parameters in the URL.
+
+Query parameters are added after the main URL using the '?' character, followed by a series of key=value pairs, separated by '&'.
 
 ##### Available query parameters:
 | Query Parameters          | Description                                                                 |
@@ -140,8 +164,9 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 # 🤝 Support
 Thank you for your interest in supporting the GitHub Cards project! Your support plays a vital role in maintaining and improving the project. There are various ways you can contribute:
-1. ⭐ Star the Repository: By starring the GitHub Cards repository on GitHub, you can show your appreciation and help the project reach a wider audience.
-2. 🗨️ Spread the Word: Help spread the word about GitHub Cards. Whether it's through social media, developer communities, or sharing with your peers, your advocacy can make a significant impact.
+1. ⭐ **Star the Repository**: By starring the GitHub Cards repository on GitHub, you can show your appreciation and help the project reach a wider audience.
+2. 🗨️ **Spread the Word**: Help spread the word about GitHub Cards. Whether it's through social media, developer communities, or sharing with your peers, your advocacy can make a significant impact.
+3. 💖 **Sponsor the Project**: Consider financially supporting GitHub Cards through GitHub Sponsoring. Your contribution will directly support ongoing development. Click the Sponsor button at the top of the repo, or [click here](https://github.com/sponsors/robert-warneke). Any amount is greatly appreciated.
 
 ---
 
@@ -149,5 +174,5 @@ Thank you for your interest in supporting the GitHub Cards project! Your support
 
 If you have questions or ideas concerning GitHub Cards, you're welcome to reach out. Here are a few ways you can connect:
 
-1. ⚠️ GitHub Issues: If you encounter a problem with the GitHub Cards, have a look at existing [issues](https://github.com/robert-warneke/github-cards/issues) or open a new one. This is the best place to discuss technical issues or suggest new features.
-2. 📧 Email: If you'd prefer to discuss something in private, you can send me an email. Please use this sparingly, as it's more efficient for us to have most discussions in the open on GitHub issues. hello@robertwarneke.com
+1. ⚠️ **GitHub Issues**: If you encounter a problem with the GitHub Cards, have a look at existing [issues](https://github.com/robert-warneke/github-cards/issues) or open a new one. This is the best place to discuss technical issues or suggest new features.
+2. 📧 **Email**: If you'd prefer to discuss something in private, you can send me an email. Please use this sparingly, as it's more efficient for us to have most discussions in the open on GitHub issues. hello@robertwarneke.com
