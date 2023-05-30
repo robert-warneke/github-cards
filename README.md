@@ -132,19 +132,35 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 > 🔍 Example of the default 'GitHub Contribution Chart Card':
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart)
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart)
+>
+> ```md
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke)
+> ```
 
 > 🔍 Example of the `'showFullYear'` parameter key with the value `'true'`:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?showFullYear=true)
+>
+> ```md
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showFullYear=true)
+> ```
 
 > 🔍 Example of the `year` parameter key with a specified year:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?year=2020)
+>
+> ```md
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2020)
+> ```
 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
-> ![Default GitHub Contribution Chart](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+>
+> ```md
+> ![Default GitHub Contribution Chart Card](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
+> ```
 
 ### 📋 How to Use:
 Follow these steps to use the 'GitHub Repo Card' in your README file or any other place:
