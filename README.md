@@ -170,6 +170,16 @@ You can customize the 'GitHub Contribution Chart Card' by providing query parame
 
 Query parameters are added after the main URL using the '?' character, followed by a series of key=value pairs, separated by '&'.
 
+> 🔍 Example:
+> ```md
+> https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&year=2023
+> ```
+>
+> In this example:
+> - `https://my-github-cards.vercel.app/api/github-contribution-chart` is the main URL.
+> - `'user'` is a parameter key and `'robert-warneke'` is its value.
+> - `'year'` is another parameter key and `'2023'` is its value.
+
 ##### Available query parameters:
 | Query Parameters          | Description                                                                 |
 | ------------------------- | --------------------------------------------------------------------------- |
