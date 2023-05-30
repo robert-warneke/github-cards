@@ -22,6 +22,11 @@ module.exports = async (req, res) => {
   let yearLabelColorQuery = req.query.yearLabelColor || null;
   let userLabelColorQuery = req.query.userLabelColor || null;
   let githubIconColorQuery = req.query.githubIconColor || null;
+  let level0ColorQuery = req.query.level0Color || null;
+  let level1ColorQuery = req.query.level1Color || null;
+  let level2ColorQuery = req.query.level2Color || null;
+  let level3ColorQuery = req.query.level3Color || null;
+  let level4ColorQuery = req.query.level4Color || null;
 
   const themeColors = themes[theme]();
   let level0Color = themeColors.level0 || "#ebedf0";
@@ -29,6 +34,26 @@ module.exports = async (req, res) => {
   let level2Color = themeColors.level2 || "#7bc96f";
   let level3Color = themeColors.level3 || "#239a3b";
   let level4Color = themeColors.level4 || "#196127";
+
+  if (level0ColorQuery) {
+    level0Color = '#' + level0ColorQuery;
+  }
+
+  if (level1ColorQuery) {
+    level1Color = '#' + level1ColorQuery;
+  }
+  
+  if (level2ColorQuery) {
+    level2Color = '#' + level2ColorQuery;
+  }
+
+  if (level3ColorQuery) {
+    level3Color = '#' + level3ColorQuery;
+  }
+
+  if (level4ColorQuery) {
+    level4Color = '#' + level4ColorQuery;
+  }
 
   const weekHeight = 8;
   const daySize = 10;
