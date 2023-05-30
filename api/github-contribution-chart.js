@@ -23,14 +23,19 @@ module.exports = async (req, res) => {
   let userLabelColorQuery = req.query.userLabelColor || null;
   let githubIconColorQuery = req.query.githubIconColor || null;
 
+  const themeColors = themes[theme]();
+  let level0Color = themeColors.level0 || "#ebedf0";
+  let level1Color = themeColors.level1 || "#c6e48b";
+  let level2Color = themeColors.level2 || "#7bc96f";
+  let level3Color = themeColors.level3 || "#239a3b";
+  let level4Color = themeColors.level4 || "#196127";
+
   const weekHeight = 8;
   const daySize = 10;
   const dayMargin = 4;
-  const levelColors = ["#ebedf0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"];
+  const levelColors = [level0Color, level1Color, level2Color, level3Color, level4Color];
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-  const themeColors = themes[theme]();
 
   let bgColor = themeColors.background;
   if (bgColorQuery) {
