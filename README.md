@@ -167,6 +167,7 @@ Query parameters are added after the main URL using the '?' character, followed 
 Thank you for your interest in supporting the GitHub Cards project! Your support plays a vital role in maintaining and improving the project. There are various ways you can contribute:
 1. ⭐ Star the Repository: By starring the GitHub Cards repository on GitHub, you can show your appreciation and help the project reach a wider audience.
 2. 🗨️ Spread the Word: Help spread the word about GitHub Cards. Whether it's through social media, developer communities, or sharing with your peers, your advocacy can make a significant impact.
+3. 💖 Sponsor the Project: Consider financially supporting GitHub Cards through GitHub Sponsoring. Your contribution will directly support ongoing development. Click the Sponsor button at the top of the repo, or [click here](https://github.com/sponsors/robert-warneke). Any amount is greatly appreciated.
 
 ---
 
