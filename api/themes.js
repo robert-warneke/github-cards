@@ -5,7 +5,7 @@ const getLangDotColor = (lang) => {
 };
 
 const themes = {
-  dark: (lang) => ({ 
+  dark: (lang = 'Default') => ({ 
     background: '#212121', 
     border: '#8ab4f8', 
     titleText: '#8ab4f8', 
@@ -14,7 +14,7 @@ const themes = {
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang)
   }),
-  light: (lang) => ({ 
+  light: (lang = 'Default') => ({ 
     background: '#f5f5f5', 
     border: '#8ab4f8',
     titleText: '#1a0dab', 
@@ -23,28 +23,28 @@ const themes = {
     icon: '#9e9e9e',
     langDot: getLangDotColor(lang)
   }),
-  straightBlack: (lang) => ({ 
+  straightBlack: (lang = 'Default') => ({ 
     background: '#000000', 
     border: '#ffffff',
     text: '#ffffff', 
     icon: '#ffffff',
     langDot: '#ffffff'
   }),
-  straightWhite: (lang) => ({ 
+  straightWhite: (lang = 'Default') => ({ 
     background: '#ffffff', 
     border: '#000000', 
     text: '#000000',
     icon: '#000000',
     langDot: '#000000'
   }),
-  terminal: (lang) => ({ 
+  terminal: (lang = 'Default') => ({ 
     background: '#000000', 
     border: '#39ff14', 
     text: '#39ff14', 
     icon: '#39ff14',
     langDot: '#39ff14'
   }),
-  warneke: (lang) => ({
+  warneke: (lang = 'Default') => ({
     background: '#554dc7',
     border: '#b4e8e6',
     titleText: '#fffbb3',

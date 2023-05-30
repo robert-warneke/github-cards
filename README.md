@@ -201,6 +201,8 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `showFullYear`            | Displays the current year data beyond the current day... or doesn't! Default is `'false'` |
 | `showUsername`            | Displays the GitHub username in the top center of the card... or doesn't! Default is `'true'` |
 | `showGitHubIcon`          | Displays the GitHub Icon... or doesn't! Default is `'true'`                 |
+| `bgColor`                 | Background color of the card                                                |
+| `borderColor`             | Border color of the card                                                    |
 
 ---
 

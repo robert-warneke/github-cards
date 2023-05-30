@@ -1,4 +1,5 @@
 const languages = {
+    Default: { color: '#000000' },
     JavaScript: { color: '#f1e05a' },
     Python: { color: '#3572A5' },
     Ruby: { color: '#701516' },

@@ -13,6 +13,8 @@ module.exports = async (req, res) => {
   const showUsername = req.query.showUsername !== 'false';
   const showGitHubIcon = req.query.showGitHubIcon !== 'false';
   const theme = req.query.theme || 'light';
+  const bgColorQuery = req.query.bgColor || null;
+  const borderColorQuery = req.query.borderColor || null;
 
   const weekHeight = 8;
   const daySize = 10;
@@ -21,10 +23,18 @@ module.exports = async (req, res) => {
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-  const themeColors = themes[theme](lang);
+  const themeColors = themes[theme]();
 
-  const bgColor = "#f6f8fa";
-  const borderColor = "#e1e4e8";
+  let bgColor = themeColors.background;
+  if (bgColorQuery) {
+    bgColor = '#' + bgColorQuery;
+  }
+
+  let borderColor = themeColors.border;
+  if (borderColorQuery) {
+    borderColor = '#' + borderColorQuery
+  }
+  
   const dayLabelColor = "#000000";
   const monthLabelColor = "#000000";
   const keyLabelColor = "#000000";
