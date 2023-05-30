@@ -113,6 +113,8 @@ Query parameters are added after the main URL using the '?' character, followed 
 | `watchIconColor`          | Color of the watching icon. Overrides 'iconColor'.                          |
 | `forkIconColor`           | Color of the forks icon. Overrides 'iconColor'.                             |
 
+---
+
 ## GitHub Contribution Chart Cards
 
 ### 🖥️ Demo:
