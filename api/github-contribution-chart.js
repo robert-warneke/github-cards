@@ -24,6 +24,7 @@ module.exports = async (req, res) => {
   const dayLabelColor = "#000000";
   const monthLabelColor = "#000000";
   const keyLabelColor = "#000000";
+  const userLabelColor = "#000000"
 
   const firstDayOfYear = new Date(year, 0, 1);
   const lastDayOfYear = new Date(year, 11, 31);
@@ -114,7 +115,7 @@ for (let i = 0; i < levelColors.length; i++) {
 
       if (showUsername) {
         const usernameX = svgWidth / 2;
-        svgCode += `<text x="${usernameX}" y="25" text-anchor="middle" font-size="16">${username}</text>\n`;
+        svgCode += `<text x="${usernameX}" y="25" text-anchor="middle" font-size="16" fill="${userLabelColor}">${username}</text>\n`;
       }
 
       // Before the yearText SVG element
