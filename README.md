@@ -228,3 +228,7 @@ If you have questions or ideas concerning GitHub Cards, you're welcome to reach 
 
 1. ⚠️ **GitHub Issues**: If you encounter a problem with the GitHub Cards, have a look at existing [issues](https://github.com/robert-warneke/github-cards/issues) or open a new one. This is the best place to discuss technical issues or suggest new features.
 2. 📧 **Email**: If you'd prefer to discuss something in private, you can send me an email. Please use this sparingly, as it's more efficient for us to have most discussions in the open on GitHub issues. hello@robertwarneke.com
+
+---
+
+&#9432; Please note that GitHub Cards is a community project and is not affiliated with or endorsed by GitHub Inc.
