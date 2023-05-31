@@ -92,7 +92,5 @@ function formatDate(dateString) {
 }
 
 function getTextWidth(text) {
-  // approximate width calculation: number of characters times some factor
-  // adjust the factor to match your font
   return text.length * 6;  
 }
