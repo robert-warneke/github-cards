@@ -7,7 +7,7 @@ const getLangDotColor = (lang) => {
 const themes = {
   dark: (lang = 'Default') => ({ 
     background: '#333333', 
-    border: '#8ab4f8', 
+    border: '#f5f5f5', 
     titleText: '#8ab4f8', 
     descriptionText: '#f5f5f5', 
     dataText: '#8ab4f8', 
