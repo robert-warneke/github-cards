@@ -156,10 +156,18 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 > 🔍 Example of the `'showUsername'` parameter key with the value `'false'`:
 >
-> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?showUsername=false)
+> ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
 >
 > ```md
 > ![GitHub Contribution Chart Card with 'showUsername'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&showUsername=false)
+> ```
+
+> 🔍 Example of the `'theme'` parameter key with the value `'dark'`:
+>
+> ![GitHub Contribution Chart Card with 'theme'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&theme=dark)
+>
+> ```md
+> ![GitHub Contribution Chart Card with 'theme'](https://my-github-cards.vercel.app/api/github-contribution-chart?user=robert-warneke&theme=dark)
 > ```
 
 ### 📋 How to Use:
