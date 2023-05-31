@@ -28,9 +28,6 @@ yarn-error.log*
 # Examples
 /examples
 
-# Dev
-/dev
-
 # Logs
 logs
 *.log
