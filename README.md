@@ -222,6 +222,20 @@ Query parameters are added after the main URL using the '?' character, followed 
 
 ---
 
+## GitHub Last Commit Badge
+
+### 🖥️ Demo:
+
+> 🔍 Example of the default 'GitHub Last Commit Badge':
+>
+> ![Default GitHub Last Commit Badge](https://my-github-cards.vercel.app/api/github-last-commit-badge?user=robert-warneke)
+>
+> ```md
+> ![Default GitHub Last Commit Badge](https://my-github-cards.vercel.app/api/github-last-commit-badge?user=robert-warneke)
+> ```
+
+---
+
 # 🤝 Support
 Thank you for your interest in supporting the GitHub Cards project! Your support plays a vital role in maintaining and improving the project. There are various ways you can contribute:
 1. ⭐ **Star the Repository**: By starring the GitHub Cards repository on GitHub, you can show your appreciation and help the project reach a wider audience.
