@@ -231,4 +231,4 @@ If you have questions or ideas concerning GitHub Cards, you're welcome to reach 
 
 ---
 
-Please note that GitHub Cards is a community project and is not affiliated with or endorsed by GitHub Inc.
+&#9432; Please note that GitHub Cards is a community project and is not affiliated with or endorsed by GitHub Inc.
