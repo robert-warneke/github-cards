@@ -8,11 +8,37 @@ const DEFAULT_USER = "robert-warneke";
 
 module.exports = async (req, res) => {
   try {
-    const user = req.query.user || DEFAULT_USER;
+    let user = req.query.user || DEFAULT_USER;
     let repo = req.query.repo;
     let lastCommit = null;
 
-    const showRepo = req.query.showRepo !== 'false';
+    let showRepo = req.query.showRepo !== 'false';
+
+    let leftSectionColorQuery = req.query.leftSectionColor || null;
+    let leftSectionColor = '#555';
+    if (leftSectionColorQuery) {
+      leftSectionColor = '#' + leftSectionColorQuery;
+    }
+
+    let textColorQuery = req.query.textColor || null;
+    let leftTextColorQuery = req.query.leftTextColor || null;
+    let rightTextColorQuery = req.query.rightTextColor || null;
+    let textColor = "#fff";
+    let leftTextColor = "#fff";
+    let rightTextColor = "#fff";
+    if (textColorQuery) {
+      textColor = '#' + textColorQuery;
+      leftTextColor = textColor;
+      rightTextColor = textColor;
+    }
+
+    if (leftTextColorQuery) {
+      leftTextColor = '#' + leftTextColorQuery;
+    }
+
+    if (rightTextColorQuery) {
+      rightTextColor = '#' + rightTextColorQuery;
+    }
 
     if (repo) {
       // Fetch the last commit information from a specific repo
@@ -48,7 +74,7 @@ module.exports = async (req, res) => {
     const commitDate = lastCommit.commit.committer.date;
 
     // Create the badge SVG
-    const badgeSvg = createBadge(commitMessage, commitDate, repo, showRepo);
+    const badgeSvg = createBadge(commitMessage, commitDate, repo, showRepo, leftSectionColor, leftTextColor, rightTextColor);
 
     res.setHeader("Content-Type", "image/svg+xml");
     res.status(200).send(badgeSvg);
@@ -60,7 +86,7 @@ module.exports = async (req, res) => {
 
 const padding = 10;
 
-function createBadge(commitMessage, commitDate, repoName = '', showRepo = true) {
+function createBadge(commitMessage, commitDate, repoName = '', showRepo = true, leftSectionColor, leftTextColor, rightTextColor) {
   const leftSectionText = showRepo && repoName 
     ? `Last Commit to ${repoName}`
     : 'Last Commit';
@@ -75,10 +101,10 @@ function createBadge(commitMessage, commitDate, repoName = '', showRepo = true) 
         <stop offset="0" stop-color="#eaeaea" stop-opacity=".1"/>
         <stop offset="1" stop-opacity=".1"/>
       </linearGradient>
-      <rect width="${leftSectionWidth}" height="20" fill="#555"/>
+      <rect width="${leftSectionWidth}" height="20" fill="${leftSectionColor}"/>
       <rect x="${leftSectionWidth}" width="${rightSectionWidth}" height="20" fill="#97ca00"/>
-      <text x="${padding}" y="14" fill="#fff" fill-opacity=".7" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${leftSectionText}</text>
-      <text x="${leftSectionWidth + padding}" y="14" fill="#fff" fill-opacity=".7" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${rightSectionText}</text>
+      <text x="${padding}" y="14" fill="${leftTextColor}" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${leftSectionText}</text>
+      <text x="${leftSectionWidth + padding}" y="14" fill="${rightTextColor}" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${rightSectionText}</text>
     </svg>
   `;
 
