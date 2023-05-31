@@ -13,6 +13,8 @@ module.exports = async (req, res) => {
     let repo = req.query.repo;
     let lastCommit = null;
 
+    const showRepo = req.query.showRepo !== 'false';
+
     if (repo) {
       // Fetch the last commit information from a specific repo
       const response = await octokit.repos.listCommits({
@@ -47,7 +49,7 @@ module.exports = async (req, res) => {
     const commitDate = lastCommit.commit.committer.date;
 
     // Create the badge SVG
-    const badgeSvg = createBadge(commitMessage, commitDate);
+    const badgeSvg = createBadge(commitMessage, commitDate, repo, showRepo);
 
     res.setHeader("Content-Type", "image/svg+xml");
     res.status(200).send(badgeSvg);
@@ -59,8 +61,10 @@ module.exports = async (req, res) => {
 
 const padding = 10;
 
-function createBadge(commitMessage, commitDate) {
-  const leftSectionText = "Last Commit";
+function createBadge(commitMessage, commitDate, repoName = '', showRepo = true) {
+  const leftSectionText = showRepo && repoName 
+    ? `Last Commit to ${repoName}`
+    : 'Last Commit';
   const rightSectionText = formatDate(commitDate);
 
   const leftSectionWidth = getTextWidth(leftSectionText) + 2 * padding;
