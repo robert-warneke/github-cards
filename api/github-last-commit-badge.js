@@ -103,8 +103,8 @@ function createBadge(commitMessage, commitDate, repoName = '', showRepo = true, 
       </linearGradient>
       <rect width="${leftSectionWidth}" height="20" fill="${leftSectionColor}"/>
       <rect x="${leftSectionWidth}" width="${rightSectionWidth}" height="20" fill="#97ca00"/>
-      <text x="${padding}" y="14" fill="${leftTextColor}" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${leftSectionText}</text>
-      <text x="${leftSectionWidth + padding}" y="14" fill="${rightTextColor}" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${rightSectionText}</text>
+      <text x="${leftSectionWidth/2}" y="14" fill="${leftTextColor}" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${leftSectionText}</text>
+      <text x="${leftSectionWidth + rightSectionWidth/2}" y="14" fill="${rightTextColor}" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${rightSectionText}</text>
     </svg>
   `;
 
