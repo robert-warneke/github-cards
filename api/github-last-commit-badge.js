@@ -1,22 +1,48 @@
 const { Octokit } = require("@octokit/rest");
 const { createCanvas } = require("canvas");
 
-const octokit = new Octokit();
+const octokit = new Octokit({
+  auth: process.env.GITHUB_PAT,
+});
+
 const DEFAULT_USER = "robert-warneke";
-const DEFAULT_REPO = "github-cards";
 
 module.exports = async (req, res) => {
   try {
     const user = req.query.user || DEFAULT_USER;
-    const repo = req.query.repo || DEFAULT_REPO;
+    let repo = req.query.repo;
+    let lastCommit = null;
 
-    // Fetch the last commit information
-    const response = await octokit.repos.listCommits({
-      owner: user,
-      repo,
-      per_page: 1,
-    });
-    const lastCommit = response.data[0];
+    if (repo) {
+      // Fetch the last commit information from a specific repo
+      const response = await octokit.repos.listCommits({
+        owner: user,
+        repo,
+        per_page: 1,
+      });
+      lastCommit = response.data[0];
+    } else {
+      // Fetch all repositories for the user
+      const repos = await octokit.repos.listForUser({
+        username: user,
+        sort: 'updated',
+      });
+
+      // Fetch the latest commit for each repository
+      for (const repo of repos.data) {
+        const response = await octokit.repos.listCommits({
+          owner: user,
+          repo: repo.name,
+          per_page: 1,
+        });
+
+        const commit = response.data[0];
+        if (!lastCommit || new Date(commit.commit.committer.date) > new Date(lastCommit.commit.committer.date)) {
+          lastCommit = commit;
+        }
+      }
+    }
+
     const commitMessage = lastCommit.commit.message;
     const commitDate = lastCommit.commit.committer.date;
 
