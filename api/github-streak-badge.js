@@ -18,6 +18,8 @@ module.exports = async (req, res) => {
       leftSectionColor = '#' + leftSectionColorQuery;
     }
 
+    let rightSectionColor = '#FFA500';
+
     let textColorQuery = req.query.textColor || null;
     let leftTextColorQuery = req.query.leftTextColor || null;
     let rightTextColorQuery = req.query.rightTextColor || null;
@@ -67,7 +69,7 @@ module.exports = async (req, res) => {
     const streak = calculateStreak(userData.contributionsCollection.contributionCalendar.weeks);
 
     // Create the badge SVG
-    const badgeSvg = createBadge(streak, user, showUser, leftSectionColor, leftTextColor, rightTextColor);
+    const badgeSvg = createBadge(streak, user, showUser, leftSectionColor, rightSectionColor, leftTextColor, rightTextColor);
 
     res.setHeader("Content-Type", "image/svg+xml");
     res.status(200).send(badgeSvg);
@@ -79,7 +81,7 @@ module.exports = async (req, res) => {
 
 const padding = 10;
 
-function createBadge(streak, username = '', showUser = true, leftSectionColor, leftTextColor, rightTextColor) {
+function createBadge(streak, username = '', showUser = true, leftSectionColor, rightSectionColor, leftTextColor, rightTextColor) {
     const leftSectionText = showUser && username
       ? `${username}'s GitHub Streak`
       : 'GitHub Streak';
@@ -100,7 +102,7 @@ function createBadge(streak, username = '', showUser = true, leftSectionColor, l
           <stop offset="1" stop-opacity=".1"/>
         </linearGradient>
         <rect width="${leftSectionWidth}" height="20" fill="${leftSectionColor}"/>
-        <rect x="${leftSectionWidth}" width="${rightSectionWidth}" height="20" fill="#97ca00"/>
+        <rect x="${leftSectionWidth}" width="${rightSectionWidth}" height="20" fill="${rightSectionColor}"/>
         <text x="${leftSectionTextX}" y="14" fill="${leftTextColor}" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" font-weight="bold">${leftSectionText}</text>
         <text x="${leftSectionWidth + rightSectionWidth/2}" y="14" fill="${rightTextColor}" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" font-weight="bold">${rightSectionText}</text>
       </svg>
