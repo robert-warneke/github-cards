@@ -1,5 +1,4 @@
 const { Octokit } = require("@octokit/rest");
-const { createCanvas } = require("canvas");
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_PAT,
@@ -93,9 +92,7 @@ function formatDate(dateString) {
 }
 
 function getTextWidth(text) {
-  const canvas = createCanvas(200, 20);
-  const context = canvas.getContext("2d");
-  context.font = "11px Verdana,Geneva,DejaVu Sans,sans-serif";
-  const metrics = context.measureText(text);
-  return metrics.width;
+  // approximate width calculation: number of characters times some factor
+  // adjust the factor to match your font
+  return text.length * 6;  
 }
